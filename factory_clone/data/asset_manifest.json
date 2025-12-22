@@ -1,0 +1,223 @@
+{
+  "fonts": [
+    {
+      "local_path": "factory_clone/assets/fonts/93f479601ee12b01-s.p_93cd7176.woff2",
+      "filename": "93f479601ee12b01-s.p_93cd7176.woff2",
+      "size": 31288,
+      "content_type": "font/woff2"
+    },
+    {
+      "local_path": "factory_clone/assets/fonts/4cf2300e9c8272f7-s.p_93846fc4.woff2",
+      "filename": "4cf2300e9c8272f7-s.p_93846fc4.woff2",
+      "size": 28388,
+      "content_type": "font/woff2"
+    }
+  ],
+  "images": [
+    {
+      "url": "https://factory.ai/assets/bg-lines.png",
+      "local_path": "factory_clone/assets/images/bg-lines_1947860c.png",
+      "size": 213,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://factory.ai/favicon.svg",
+      "local_path": "factory_clone/assets/images/favicon_bae6330e.svg",
+      "size": 6353,
+      "content_type": "image/svg+xml"
+    }
+  ],
+  "videos": [],
+  "stylesheets": [
+    {
+      "url": "https://factory.ai/_next/static/css/de70bee13400563f.css?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/css/de70bee13400563f_fd2cd30c.css"
+    },
+    {
+      "url": "https://factory.ai/_next/static/css/a487ffbcc8e658f3.css?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/css/a487ffbcc8e658f3_a87abd5e.css"
+    },
+    {
+      "url": "https://factory.ai/_next/static/css/09dfadb69bdaa005.css?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/css/09dfadb69bdaa005_e1419317.css"
+    }
+  ],
+  "scripts": [
+    {
+      "url": "https://factory.ai/_next/static/chunks/webpack-9efe0462f3329618.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/webpack-9efe0462f3329618_4c127ad4.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/4187-53294c4dc6be46ae.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/4187-53294c4dc6be46ae_847768a0.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/0b0944fb-d3b9426bccb1c3b8.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/0b0944fb-d3b9426bccb1c3b8_ee7920fa.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/5644-e14f2ad8a0af1fcd.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/5644-e14f2ad8a0af1fcd_2a4caa53.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/main-app-822890b60020ff5c.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/main-app-822890b60020ff5c_8122d752.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/6363-8e70cd1bf26e583f.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/6363-8e70cd1bf26e583f_22d136e4.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/9983-0aa1518209a6edda.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/9983-0aa1518209a6edda_0eec4529.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/7067-671af9e1dfbec491.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/7067-671af9e1dfbec491_bfe502a1.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/4291-93ee52b0af959d67.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/4291-93ee52b0af959d67_f817993e.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/b4e6bffd-8890ce1863284b1a.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/b4e6bffd-8890ce1863284b1a_52995022.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/3245-36be3494a0f15e9b.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/3245-36be3494a0f15e9b_f33d25e4.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/layout-11a7bb327cb76c27.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/layout-11a7bb327cb76c27_553ac921.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/4678-01372ca3109a7306.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/4678-01372ca3109a7306_bcc3d3f0.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/3711-b6f8deaf1cb516df.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/3711-b6f8deaf1cb516df_82ce0a27.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/1243-ac36bafea5eddb21.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/1243-ac36bafea5eddb21_95d6ca4c.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/6838-5cbe51ca12561e56.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/6838-5cbe51ca12561e56_630d53a5.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/8933-b47ce7bd42d53df5.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/8933-b47ce7bd42d53df5_e7ad5a98.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/9996-c036f0f058151d85.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/9996-c036f0f058151d85_56d8776f.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/(home)/page-a6fb8b03209349d0.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-a6fb8b03209349d0_a5ef5bad.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/9992-740283d1025e178d.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/9992-740283d1025e178d_39f233bc.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/9229-b6a672b8b4820b7e.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/9229-b6a672b8b4820b7e_9b351db7.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/2324-841705da1bd10c69.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/2324-841705da1bd10c69_ddc85f01.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/layout-59ddf7dbb9d76dce.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/layout-59ddf7dbb9d76dce_264539fa.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/not-found-49fb9b74d8540a8c.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/not-found-49fb9b74d8540a8c_96642a24.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/1351-8c9f420219fc4aef.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/1351-8c9f420219fc4aef_e18a9dd5.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/288-624e624e407826c8.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/288-624e624e407826c8_78ad83c1.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/09c86d6c-ff517192853f56b2.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/09c86d6c-ff517192853f56b2_1c006d42.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/7709-fc633881778b23e3.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/7709-fc633881778b23e3_d771a3d9.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/enterprise/page-5d24980c53cac75b.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-5d24980c53cac75b_bd066a31.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/40-f884a80dbb64b4ae.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/40-f884a80dbb64b4ae_c171f075.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/contact/page-5935bea08a53ee67.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-5935bea08a53ee67_4e8b29e4.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/pricing/page-95048b62e335f170.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-95048b62e335f170_48e14975.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/company/page-8476534363bef821.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-8476534363bef821_a92435b3.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/7830-197ddee66a015293.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/7830-197ddee66a015293_8356e845.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/5962-ff3b34ce85edf336.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/5962-ff3b34ce85edf336_99accbeb.js"
+    },
+    {
+      "url": "https://cdn.cr-relay.com/v1/site/457e6921-6226-4fe9-be40-69c65e727d96/signals.js",
+      "local_path": "factory_clone/assets/js/signals_e405accb.js"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-2FPDETZRBF",
+      "local_path": "factory_clone/assets/js/js_c27c7567.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/9089-c4edac55192100c1.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/9089-c4edac55192100c1_0668a912.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/product/%5Bslug%5D/page-4870427233fe4fdf.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-4870427233fe4fdf_6f9816e8.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/security/page-84ec1861d96f0812.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-84ec1861d96f0812_8db8a5a2.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/news/%5Bslug%5D/page-9c9e1d3c8dd2e49a.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-9c9e1d3c8dd2e49a_f1f8bc92.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/news/layout-caa859d3f4905dbe.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/layout-caa859d3f4905dbe_361aa9cf.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/careers/%5Bslug%5D/page-b363d77a272f6821.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-b363d77a272f6821_5f2db5e9.js"
+    },
+    {
+      "url": "https://factory.ai/_next/static/chunks/app/(pages)/oss/page-00f7bf33eef96aa4.js?dpl=dpl_52WsurcHeA4vWD2pgMoaJVu3ufrX",
+      "local_path": "factory_clone/assets/js/page-00f7bf33eef96aa4_bed30be5.js"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "animations": [
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.progress-loader",
+      "name": "progress-slide",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.progress-loader",
+      "name": "progress-slide",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.progress-loader",
+      "name": "progress-slide",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.progress-loader",
+      "name": "progress-slide",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    },
+    {
+      "element": "DIV.group-hover:running",
+      "name": "slidePattern",
+      "duration": 2,
+      "delay": 0,
+      "iterations": "infinite",
+      "totalDuration": 2
+    }
+  ],
+  "maxDuration": 2,
+  "suggestedCaptureDuration": 5,
+  "screenshots": [
+    "frame_000s.png",
+    "frame_002s.png",
+    "frame_004s.png",
+    "frame_006s.png",
+    "frame_008s.png",
+    "frame_010s.png",
+    "frame_012s.png",
+    "frame_014s.png",
+    "frame_016s.png",
+    "frame_018s.png",
+    "frame_020s.png",
+    "frame_022s.png",
+    "frame_024s.png"
+  ],
+  "capture_duration": 25,
+  "interval": 2
+}

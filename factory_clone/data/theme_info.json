@@ -1,0 +1,22 @@
+{
+  "initial_theme": "light",
+  "themes_captured": [
+    "light",
+    "dark"
+  ],
+  "toggle_found": true,
+  "toggle_info": {
+    "found": true,
+    "selector": "[aria-label*=\"theme\" i]",
+    "tag": "BUTTON",
+    "text": "",
+    "ariaLabel": "Switch to Dark theme",
+    "className": "theme-selector-button relative z-10 flex cursor-pointer items-center justify-center rounded-sm h-6 gap-1 px-2 transition-all duration-200 [&_*]:text-light-base-primary hover:text-light-base-primary hover:[&_path]:fill-light-base-primary",
+    "rect": {
+      "x": 1279,
+      "y": 10745.65625,
+      "width": 24,
+      "height": 24
+    }
+  }
+}

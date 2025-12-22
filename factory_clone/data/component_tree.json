@@ -1,0 +1,5188 @@
+{
+  "tag": "body",
+  "id": null,
+  "classes": [
+    "__variable_188709",
+    "__variable_9a8899",
+    "mx-auto",
+    "flex",
+    "flex-col",
+    "overflow-x-clip",
+    "antialiased"
+  ],
+  "role": null,
+  "text": null,
+  "dimensions": {
+    "width": 1905,
+    "height": 10921
+  },
+  "layout": {
+    "display": "flex",
+    "position": "static",
+    "flexDirection": "column",
+    "justifyContent": "normal",
+    "alignItems": "normal",
+    "gap": "normal"
+  },
+  "children": [
+    {
+      "tag": "div",
+      "id": null,
+      "classes": [],
+      "role": null,
+      "text": null,
+      "dimensions": {
+        "width": 0,
+        "height": 0
+      },
+      "layout": {
+        "display": "none",
+        "position": "static",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "children": []
+    },
+    {
+      "tag": "header",
+      "id": null,
+      "classes": [
+        "after:bg-background",
+        "border-base-800",
+        "sticky",
+        "inset-x-0",
+        "top-0",
+        "z-60",
+        "border-b",
+        "px-4",
+        "after:absolute",
+        "after:inset-0",
+        "after:left-1/2",
+        "after:h-full",
+        "after:w-screen",
+        "after:-translate-x-1/2",
+        "md:border-b-0",
+        "lg:px-9"
+      ],
+      "role": null,
+      "text": null,
+      "dimensions": {
+        "width": 1905,
+        "height": 65
+      },
+      "layout": {
+        "display": "block",
+        "position": "sticky",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "id": null,
+          "classes": [
+            "mx-auto",
+            "flex",
+            "items-center",
+            "justify-between",
+            "py-5"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 1833,
+            "height": 65
+          },
+          "layout": {
+            "display": "flex",
+            "position": "static",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "alignItems": "center",
+            "gap": "normal"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "id": null,
+              "classes": [
+                "z-50"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 128,
+                "height": 19
+              },
+              "layout": {
+                "display": "block",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "svg",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 128,
+                    "height": 19
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "title",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": "Factory.ai Logo",
+                      "dimensions": {
+                        "width": 0,
+                        "height": 0
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 10,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 13,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 13,
+                        "height": 14
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 11,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 14,
+                        "height": 14
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 11,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 12,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 19,
+                        "height": 18
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 10,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 13,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 13,
+                        "height": 14
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 11,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 14,
+                        "height": 14
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 11,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 12,
+                        "height": 13
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "id": null,
+                  "classes": [
+                    "sr-only"
+                  ],
+                  "role": null,
+                  "text": "Factory.ai",
+                  "dimensions": {
+                    "width": 1,
+                    "height": 1
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "absolute",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "nav",
+              "id": null,
+              "classes": [
+                "z-50",
+                "flex",
+                "w-full",
+                "items-center",
+                "justify-between",
+                "gap-9",
+                "md:w-auto",
+                "md:justify-end"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 678,
+                "height": 25
+              },
+              "layout": {
+                "display": "flex",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "flex-end",
+                "alignItems": "center",
+                "gap": "36px"
+              },
+              "children": [
+                {
+                  "tag": "nav",
+                  "id": null,
+                  "classes": [
+                    "relative",
+                    "hidden",
+                    "lg:flex"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 446,
+                    "height": 12
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "relative",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 446,
+                        "height": 12
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "a",
+                  "id": "mobile-nav-link",
+                  "classes": [
+                    "md:hidden"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 0,
+                    "height": 0
+                  },
+                  "layout": {
+                    "display": "none",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "svg",
+                      "id": "mobile-nav-logo",
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 0,
+                        "height": 0
+                      },
+                      "layout": {
+                        "display": "none",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "flex",
+                    "items-center",
+                    "gap-3"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 196,
+                    "height": 25
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "center",
+                    "gap": "12px"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "group",
+                        "relative",
+                        "w-max",
+                        "cursor-pointer",
+                        "items-center",
+                        "justify-center",
+                        "border",
+                        "transition-colors",
+                        "duration-150",
+                        "will-change-transform",
+                        "disabled:cursor-not-allowed",
+                        "disabled:opacity-50",
+                        "[&_*]:transition-colors",
+                        "[&_*]:duration-150",
+                        "bg-light-base-secondary",
+                        "hover:bg-dark-base-primary",
+                        "focus-visible:bg-dark-base-primary",
+                        "[&_*]:text-dark-base-primary",
+                        "hover:[&_*]:text-light-base-secondary",
+                        "focus-visible:[&_*]:text-light-base-secondary",
+                        "hover:border-base-600",
+                        "focus-visible:border-base-600",
+                        "focus-visible:outline-light-base-secondary",
+                        "overflow-clip",
+                        "rounded-sm",
+                        "border-transparent",
+                        "focus-visible:outline",
+                        "focus-visible:outline-offset-4",
+                        "h-[25px]",
+                        "px-3",
+                        "hidden",
+                        "md:flex"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 68,
+                        "height": 25
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "group",
+                        "relative",
+                        "w-max",
+                        "cursor-pointer",
+                        "items-center",
+                        "justify-center",
+                        "border",
+                        "border-transparent",
+                        "transition-colors",
+                        "duration-150",
+                        "will-change-transform",
+                        "disabled:cursor-not-allowed",
+                        "disabled:opacity-50",
+                        "[&_*]:transition-colors",
+                        "[&_*]:duration-150",
+                        "bg-base-1000",
+                        "light:bg-dark-base-primary",
+                        "[&_*]:text-light-base-primary",
+                        "hover:bg-light-base-secondary",
+                        "focus-visible:bg-light-base-secondary",
+                        "hover:[&_*]:text-dark-base-primary",
+                        "focus-visible:[&_*]:text-dark-base-primary",
+                        "hover:outline-light-base-secondary",
+                        "focus-visible:outline-light-base-secondary",
+                        "light:border-base-700",
+                        "overflow-clip",
+                        "rounded-sm",
+                        "focus-visible:outline",
+                        "focus-visible:outline-offset-4",
+                        "h-[25px]",
+                        "px-3",
+                        "hidden",
+                        "md:flex"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 116,
+                        "height": 25
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "button",
+                      "id": null,
+                      "classes": [
+                        "relative",
+                        "-m-1",
+                        "flex",
+                        "cursor-pointer",
+                        "items-center",
+                        "justify-center",
+                        "p-1",
+                        "text-gray-500",
+                        "hover:text-gray-700",
+                        "lg:hidden"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 0,
+                        "height": 0
+                      },
+                      "layout": {
+                        "display": "none",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "id": null,
+      "classes": [
+        "flex-1"
+      ],
+      "role": null,
+      "text": null,
+      "dimensions": {
+        "width": 1905,
+        "height": 9570
+      },
+      "layout": {
+        "display": "block",
+        "position": "static",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "children": [
+        {
+          "tag": "section",
+          "id": null,
+          "classes": [
+            "relative",
+            "mx-auto",
+            "grid",
+            "h-auto",
+            "w-full",
+            "grid-cols-4",
+            "gap-x-4",
+            "lg:grid-cols-12",
+            "lg:gap-x-6",
+            "my-20",
+            "bg-transparent",
+            "px-4",
+            "first:mt-4",
+            "lg:mt-20",
+            "lg:px-9",
+            "first:lg:mt-10",
+            "lg:mb-30",
+            "lg:h-[calc(100dvh-160px)]",
+            "lg:max-h-[725px]",
+            "lg:min-h-[620px]",
+            "xl:mb-22"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 1905,
+            "height": 725
+          },
+          "layout": {
+            "display": "grid",
+            "position": "relative",
+            "flexDirection": "row",
+            "justifyContent": "normal",
+            "alignItems": "normal",
+            "gap": "normal 24px"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "z-10",
+                "col-span-4",
+                "flex",
+                "max-w-[650px]",
+                "flex-col",
+                "justify-between",
+                "lg:col-span-6",
+                "lg:max-w-none"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 905,
+                "height": 575
+              },
+              "layout": {
+                "display": "flex",
+                "position": "static",
+                "flexDirection": "column",
+                "justifyContent": "space-between",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "flex",
+                    "flex-col",
+                    "gap-y-6",
+                    "lg:gap-y-8"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 905,
+                    "height": 529
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "column",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "32px normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "text-pretty",
+                        "font-mono",
+                        "text-[14px]",
+                        "leading-[100%]",
+                        "tracking-[-0.0175rem]",
+                        "text-gl",
+                        "invisible",
+                        "inline-flex",
+                        "items-center",
+                        "uppercase",
+                        "[&>[data-slot='badge-icon']]:border-transparent",
+                        "[&>[data-slot='badge-icon']]:bg-accent-300",
+                        "[&_*]:text-base-500",
+                        "gap-3",
+                        "pt-4"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 905,
+                        "height": 28
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "center",
+                        "gap": "12px"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "h1",
+                      "id": null,
+                      "classes": [
+                        "text-foreground",
+                        "font-normal",
+                        "text-[40px]",
+                        "leading-[100%]",
+                        "tracking-[-0.16rem]",
+                        "lg:tracking-[-0.18rem]",
+                        "lg:-ml-1",
+                        "lg:text-6xl",
+                        "2xl:text-7xl",
+                        "visible"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 909,
+                        "height": 144
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "invisible",
+                        "flex",
+                        "flex-col",
+                        "gap-y-4",
+                        "lg:max-w-[600px]",
+                        "lg:gap-y-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 600,
+                        "height": 132
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "24px normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "invisible",
+                        "max-w-[600px]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 600,
+                        "height": 129
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "pointer-events-none",
+                "relative",
+                "h-full",
+                "w-full",
+                "overflow-hidden",
+                "md:pointer-events-auto",
+                "light:mix-blend-normal",
+                "z-0",
+                "col-span-full",
+                "aspect-[3/2]",
+                "max-w-[700px]",
+                "mix-blend-lighten",
+                "lg:absolute",
+                "lg:-top-[clamp(20px,11dvh,130px)]",
+                "lg:-right-12",
+                "lg:aspect-[4/3]",
+                "lg:max-h-[clamp(650px,50vw,1000px)]",
+                "lg:w-[clamp(600px,54vw,1000px)]",
+                "lg:max-w-none",
+                "2xl:-right-2"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 1000,
+                "height": 725
+              },
+              "layout": {
+                "display": "block",
+                "position": "absolute",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1000,
+                    "height": 725
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "col-span-full",
+                "mt-auto",
+                "pt-6"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 1833,
+                "height": 104
+              },
+              "layout": {
+                "display": "block",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "section",
+                  "id": null,
+                  "classes": [
+                    "relative",
+                    "mx-auto",
+                    "grid",
+                    "h-auto",
+                    "w-full",
+                    "grid-cols-4",
+                    "gap-x-4",
+                    "lg:grid-cols-12",
+                    "lg:gap-x-6",
+                    "my-20",
+                    "bg-transparent",
+                    "first:mt-4",
+                    "first:lg:mt-10",
+                    "px-0",
+                    "lg:px-0",
+                    "lg:mt-0",
+                    "lg:mb-0",
+                    "lg:items-center",
+                    "mt-0",
+                    "mb-0"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 40
+                  },
+                  "layout": {
+                    "display": "grid",
+                    "position": "relative",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "center",
+                    "gap": "normal 24px"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "text-pretty",
+                        "font-mono",
+                        "text-[14px]",
+                        "leading-[100%]",
+                        "tracking-[-0.0175rem]",
+                        "invisible",
+                        "inline-flex",
+                        "items-center",
+                        "uppercase",
+                        "[&>[data-slot='badge-icon']]:border-transparent",
+                        "[&>[data-slot='badge-icon']]:bg-accent-300",
+                        "[&_*]:text-base-500",
+                        "gap-3",
+                        "text-base-500",
+                        "col-span-full",
+                        "mb-8",
+                        "h-max",
+                        "lg:col-span-2",
+                        "lg:mb-0",
+                        "[&_*]:shrink-0",
+                        "[&_*]:whitespace-nowrap"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 286,
+                        "height": 12
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "center",
+                        "gap": "12px"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "relative",
+                        "col-span-full",
+                        "overflow-hidden",
+                        "lg:col-span-8",
+                        "lg:col-start-5",
+                        "xl:col-span-6",
+                        "xl:col-start-7"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 905,
+                        "height": 40
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "classes": [
+            "pin-spacer"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 1905,
+            "height": 5400
+          },
+          "layout": {
+            "display": "block",
+            "position": "relative",
+            "flexDirection": "row",
+            "justifyContent": "normal",
+            "alignItems": "normal",
+            "gap": "normal"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "relative"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 1905,
+                "height": 1080
+              },
+              "layout": {
+                "display": "block",
+                "position": "relative",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "section",
+                  "id": null,
+                  "classes": [
+                    "after:bg-dark-base-secondary",
+                    "md:py-",
+                    "before:bg-dark-base-primary",
+                    "relative",
+                    "mx-auto",
+                    "grid",
+                    "h-auto",
+                    "w-full",
+                    "auto-rows-min",
+                    "grid-cols-4",
+                    "gap-x-4",
+                    "px-4",
+                    "pt-6",
+                    "pb-8",
+                    "before:absolute",
+                    "before:bottom-0",
+                    "before:left-1/2",
+                    "before:z-10",
+                    "before:w-screen",
+                    "before:-translate-x-1/2",
+                    "after:absolute",
+                    "after:inset-0",
+                    "after:left-1/2",
+                    "after:-z-10",
+                    "after:w-screen",
+                    "after:-translate-x-1/2",
+                    "after:bg-center",
+                    "after:bg-blend-difference",
+                    "lg:grid-cols-12",
+                    "lg:gap-x-6",
+                    "lg:px-9",
+                    "after:bg-[url(\"/assets/bg-lines.png\")]",
+                    "min-h-screen",
+                    "lg:grid-rows-[auto_1fr]",
+                    "lg:place-content-center",
+                    "lg:pt-20",
+                    "lg:pb-8"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1905,
+                    "height": 1080
+                  },
+                  "layout": {
+                    "display": "grid",
+                    "position": "relative",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "alignItems": "normal",
+                    "gap": "normal 24px"
+                  },
+                  "children": [
+                    {
+                      "tag": "span",
+                      "id": null,
+                      "classes": [
+                        "border-base-800",
+                        "relative",
+                        "col-span-full",
+                        "mb-5",
+                        "w-full",
+                        "border-t",
+                        "pt-4"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 41
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "relative",
+                        "col-span-full",
+                        "flex",
+                        "max-h-full",
+                        "flex-col",
+                        "gap-y-13",
+                        "lg:col-span-6",
+                        "lg:gap-y-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 905,
+                        "height": 907
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "24px normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "relative",
+                        "hidden",
+                        "max-h-full",
+                        "lg:col-span-6",
+                        "lg:flex",
+                        "lg:min-w-full"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 905,
+                        "height": 907
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "classes": [
+            "relative",
+            "grid",
+            "h-auto",
+            "grid-cols-4",
+            "gap-x-4",
+            "lg:grid-cols-12",
+            "lg:gap-x-6",
+            "bg-dark-base-secondary",
+            "invert-color-scheme",
+            "mx-4",
+            "w-[calc(100%-32px)]",
+            "rounded-xl",
+            "bg-center",
+            "px-4",
+            "py-10",
+            "lg:mx-auto",
+            "lg:w-[calc(100%-72px)]",
+            "lg:rounded-2xl",
+            "lg:px-0",
+            "lg:py-12",
+            "bg-[url(\"/assets/bg-lines.png\")]",
+            "bg-blend-difference",
+            "light:bg-base-1000",
+            "my-14",
+            "md:gap-y-12",
+            "lg:my-30",
+            "lg:h-[85dvh]",
+            "lg:max-h-[750px]",
+            "lg:min-h-[640px]",
+            "lg:gap-y-0",
+            "xl:max-h-[900px]",
+            "xl:min-h-[700px]"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 1833,
+            "height": 900
+          },
+          "layout": {
+            "display": "grid",
+            "position": "relative",
+            "flexDirection": "row",
+            "justifyContent": "normal",
+            "alignItems": "normal",
+            "gap": "0px 24px"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "border-base-500",
+                "relative",
+                "col-span-full",
+                "flex",
+                "h-full",
+                "flex-col",
+                "md:pr-8",
+                "lg:col-span-5",
+                "lg:border-r",
+                "lg:pr-8",
+                "lg:pl-9"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 750,
+                "height": 804
+              },
+              "layout": {
+                "display": "flex",
+                "position": "relative",
+                "flexDirection": "column",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "text-pretty",
+                    "font-mono",
+                    "text-[14px]",
+                    "leading-[100%]",
+                    "tracking-[-0.0175rem]",
+                    "text-gl",
+                    "invisible",
+                    "inline-flex",
+                    "items-center",
+                    "uppercase",
+                    "[&>[data-slot='badge-icon']]:border-transparent",
+                    "[&>[data-slot='badge-icon']]:bg-accent-300",
+                    "[&_*]:text-base-500",
+                    "gap-3",
+                    "[&_*]:!text-base-200",
+                    "relative"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 681,
+                    "height": 12
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "relative",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "center",
+                    "gap": "12px"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "size-2",
+                        "transform-gpu",
+                        "rounded-full",
+                        "border",
+                        "will-change-[background-color]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 8,
+                        "height": 8
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "classes": [
+                        "whitespace-nowrap",
+                        "text-foreground",
+                        "text-pretty",
+                        "font-mono",
+                        "text-[12px]",
+                        "leading-[100%]",
+                        "tracking-[-0.015rem]",
+                        "uppercase"
+                      ],
+                      "role": null,
+                      "text": "Enterprise",
+                      "dimensions": {
+                        "width": 70,
+                        "height": 12
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "p",
+                  "id": null,
+                  "classes": [
+                    "text-foreground",
+                    "text-pretty",
+                    "font-mono",
+                    "text-[16px]",
+                    "leading-[120%]",
+                    "tracking-[-0.02rem]",
+                    "lg:text-[18px]",
+                    "lg:tracking-[-0.0225rem]",
+                    "order-2",
+                    "mt-4",
+                    "lg:order-none",
+                    "lg:mt-12",
+                    "lg:max-w-[390px]"
+                  ],
+                  "role": null,
+                  "text": "Factory is designed to meet the demands of modern ",
+                  "dimensions": {
+                    "width": 390,
+                    "height": 108
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "h2",
+                  "id": null,
+                  "classes": [
+                    "text-foreground",
+                    "font-normal",
+                    "text-[30px]",
+                    "leading-[100%]",
+                    "tracking-[-0.05625rem]",
+                    "lg:tracking-[-0.09rem]",
+                    "order-1",
+                    "mt-4",
+                    "lg:order-none",
+                    "lg:mt-auto",
+                    "lg:max-w-[590px]",
+                    "lg:text-4xl",
+                    "xl:text-5xl"
+                  ],
+                  "role": null,
+                  "text": "AI that will work with you, not replace you",
+                  "dimensions": {
+                    "width": 590,
+                    "height": 96
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "col-span-full",
+                "grid",
+                "gap-6",
+                "md:grid-cols-2",
+                "lg:col-span-7",
+                "lg:col-start-6",
+                "lg:pr-9"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 1059,
+                "height": 804
+              },
+              "layout": {
+                "display": "grid",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "24px"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "border-base-500",
+                    "mt-12",
+                    "flex",
+                    "flex-col",
+                    "gap-10",
+                    "border-t",
+                    "pt-6",
+                    "md:mt-0",
+                    "md:gap-0",
+                    "md:border-t-0",
+                    "md:pt-0"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 500,
+                    "height": 804
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "column",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "0px"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "classes": [
+                        "text-pretty",
+                        "font-mono",
+                        "text-[14px]",
+                        "leading-[100%]",
+                        "tracking-[-0.0175rem]",
+                        "uppercase",
+                        "text-base-200",
+                        "md:min-h-[2em]",
+                        "lg:min-h-[initial]"
+                      ],
+                      "role": null,
+                      "text": "Secure at every level",
+                      "dimensions": {
+                        "width": 500,
+                        "height": 14
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "gap-6",
+                        "md:mt-8",
+                        "lg:mt-16",
+                        "lg:max-w-[370px]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 370,
+                        "height": 140
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "24px"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "relative",
+                        "mt-auto",
+                        "pt-4"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 500,
+                        "height": 276
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "border-base-500",
+                    "flex",
+                    "flex-col",
+                    "gap-10",
+                    "border-t",
+                    "pt-6",
+                    "md:gap-0",
+                    "md:border-t-0",
+                    "md:border-l",
+                    "md:pt-0",
+                    "md:pl-4",
+                    "lg:pl-6"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 500,
+                    "height": 804
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "column",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "0px"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "classes": [
+                        "text-pretty",
+                        "font-mono",
+                        "text-[14px]",
+                        "leading-[100%]",
+                        "tracking-[-0.0175rem]",
+                        "uppercase",
+                        "text-base-200"
+                      ],
+                      "role": null,
+                      "text": "ACROSS YOUR DEVELOPMENT STACK",
+                      "dimensions": {
+                        "width": 475,
+                        "height": 14
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "gap-6",
+                        "md:mt-8",
+                        "lg:mt-16",
+                        "lg:max-w-[370px]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 370,
+                        "height": 179
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "24px"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "mt-auto",
+                        "pt-12"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 475,
+                        "height": 276
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "classes": [
+            "relative",
+            "mx-auto",
+            "grid",
+            "h-auto",
+            "w-full",
+            "grid-cols-4",
+            "gap-x-4",
+            "lg:grid-cols-12",
+            "lg:gap-x-6",
+            "my-20",
+            "bg-transparent",
+            "px-4",
+            "first:mt-4",
+            "lg:mt-20",
+            "lg:mb-30",
+            "lg:px-9",
+            "first:lg:mt-10"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 1905,
+            "height": 805
+          },
+          "layout": {
+            "display": "grid",
+            "position": "relative",
+            "flexDirection": "row",
+            "justifyContent": "normal",
+            "alignItems": "normal",
+            "gap": "normal 24px"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "relative",
+                "col-span-full"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 1833,
+                "height": 33
+              },
+              "layout": {
+                "display": "block",
+                "position": "relative",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "span",
+                  "id": null,
+                  "classes": [
+                    "border-base-800",
+                    "absolute",
+                    "top-0",
+                    "left-0",
+                    "w-full",
+                    "border-t"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 1
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "absolute",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "text-pretty",
+                    "font-mono",
+                    "text-[14px]",
+                    "leading-[100%]",
+                    "tracking-[-0.0175rem]",
+                    "text-gl",
+                    "invisible",
+                    "inline-flex",
+                    "items-center",
+                    "uppercase",
+                    "[&>[data-slot='badge-icon']]:border-transparent",
+                    "[&>[data-slot='badge-icon']]:bg-accent-300",
+                    "[&_*]:text-base-500",
+                    "gap-3",
+                    "relative",
+                    "mt-4",
+                    "w-full"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 12
+                  },
+                  "layout": {
+                    "display": "inline-flex",
+                    "position": "relative",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "center",
+                    "gap": "12px"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "size-2",
+                        "transform-gpu",
+                        "rounded-full",
+                        "border",
+                        "will-change-[background-color]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 8,
+                        "height": 8
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "classes": [
+                        "whitespace-nowrap",
+                        "text-foreground",
+                        "text-pretty",
+                        "font-mono",
+                        "text-[12px]",
+                        "leading-[100%]",
+                        "tracking-[-0.015rem]",
+                        "uppercase"
+                      ],
+                      "role": null,
+                      "text": "News",
+                      "dimensions": {
+                        "width": 28,
+                        "height": 12
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "a",
+                  "id": null,
+                  "classes": [
+                    "group",
+                    "w-max",
+                    "cursor-pointer",
+                    "items-center",
+                    "justify-center",
+                    "border",
+                    "border-transparent",
+                    "transition-colors",
+                    "duration-150",
+                    "will-change-transform",
+                    "disabled:cursor-not-allowed",
+                    "disabled:opacity-50",
+                    "[&_*]:transition-colors",
+                    "[&_*]:duration-150",
+                    "bg-base-1000",
+                    "light:bg-dark-base-primary",
+                    "[&_*]:text-light-base-primary",
+                    "hover:bg-light-base-secondary",
+                    "focus-visible:bg-light-base-secondary",
+                    "hover:[&_*]:text-dark-base-primary",
+                    "focus-visible:[&_*]:text-dark-base-primary",
+                    "hover:outline-light-base-secondary",
+                    "focus-visible:outline-light-base-secondary",
+                    "light:border-base-700",
+                    "overflow-clip",
+                    "rounded-sm",
+                    "focus-visible:outline",
+                    "focus-visible:outline-offset-4",
+                    "h-[25px]",
+                    "px-3",
+                    "absolute",
+                    "top-4",
+                    "right-0",
+                    "hidden",
+                    "md:flex"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 105,
+                    "height": 25
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "absolute",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "span",
+                      "id": null,
+                      "classes": [
+                        "relative",
+                        "z-10",
+                        "flex",
+                        "items-center",
+                        "uppercase",
+                        "gap-1"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 79,
+                        "height": 12
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "center",
+                        "gap": "4px"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "pointer-events-none",
+                        "absolute",
+                        "inset-0",
+                        "opacity-0",
+                        "will-change-transform",
+                        "group-hover:animate-[delayedFadeIn_100ms_ease-out_forwards]",
+                        "group-focus-visible:animate-[delayedFadeIn_100ms_ease-out_forwards]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 103,
+                        "height": 23
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "absolute",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "svg",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 52,
+                    "height": 343
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "absolute",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "defs",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 0,
+                        "height": 0
+                      },
+                      "layout": {
+                        "display": "inline",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "g",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 50,
+                        "height": 919
+                      },
+                      "layout": {
+                        "display": "inline",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 0,
+                        "height": 212
+                      },
+                      "layout": {
+                        "display": "inline",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "col-span-full",
+                "mt-4",
+                "flex",
+                "flex-col-reverse",
+                "lg:mt-10",
+                "lg:flex-row",
+                "lg:items-end"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 1833,
+                "height": 732
+              },
+              "layout": {
+                "display": "flex",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "flex-end",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "ul",
+                  "id": null,
+                  "classes": [
+                    "mt-14",
+                    "grid",
+                    "gap-x-6",
+                    "gap-y-16",
+                    "md:grid-cols-2",
+                    "lg:w-full",
+                    "lg:max-w-[760px]",
+                    "lg:grid-cols-[290px_290px]",
+                    "lg:justify-between",
+                    "lg:gap-x-10",
+                    "lg:gap-y-24"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 760,
+                    "height": 676
+                  },
+                  "layout": {
+                    "display": "grid",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "alignItems": "normal",
+                    "gap": "96px 40px"
+                  },
+                  "children": [
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "classes": [
+                        "group",
+                        "relative",
+                        "flex",
+                        "cursor-pointer",
+                        "flex-col",
+                        "gap-y-8",
+                        "lg:gap-y-12"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 290,
+                        "height": 290
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "48px normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "classes": [
+                        "group",
+                        "relative",
+                        "flex",
+                        "cursor-pointer",
+                        "flex-col",
+                        "gap-y-8",
+                        "lg:gap-y-12"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 290,
+                        "height": 290
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "48px normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "classes": [
+                        "group",
+                        "relative",
+                        "flex",
+                        "cursor-pointer",
+                        "flex-col",
+                        "gap-y-8",
+                        "lg:gap-y-12"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 290,
+                        "height": 290
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "48px normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "classes": [
+                        "group",
+                        "relative",
+                        "flex",
+                        "cursor-pointer",
+                        "flex-col",
+                        "gap-y-8",
+                        "lg:gap-y-12"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 290,
+                        "height": 290
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "48px normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "flex",
+                    "max-w-[550px]",
+                    "flex-col",
+                    "gap-y-6",
+                    "lg:ml-auto",
+                    "lg:pl-10"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 535,
+                    "height": 48
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "column",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "24px normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "h2",
+                      "id": null,
+                      "classes": [
+                        "text-foreground",
+                        "font-normal",
+                        "text-[30px]",
+                        "leading-[100%]",
+                        "tracking-[-0.05625rem]",
+                        "lg:text-[48px]",
+                        "lg:tracking-[-0.09rem]",
+                        "lg:text-end"
+                      ],
+                      "role": null,
+                      "text": "Factory news & updates",
+                      "dimensions": {
+                        "width": 495,
+                        "height": 48
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "group",
+                        "relative",
+                        "inline-flex",
+                        "w-max",
+                        "cursor-pointer",
+                        "items-center",
+                        "justify-center",
+                        "border",
+                        "border-transparent",
+                        "transition-colors",
+                        "duration-150",
+                        "will-change-transform",
+                        "disabled:cursor-not-allowed",
+                        "disabled:opacity-50",
+                        "[&_*]:transition-colors",
+                        "[&_*]:duration-150",
+                        "bg-base-1000",
+                        "light:bg-dark-base-primary",
+                        "[&_*]:text-light-base-primary",
+                        "hover:bg-light-base-secondary",
+                        "focus-visible:bg-light-base-secondary",
+                        "hover:[&_*]:text-dark-base-primary",
+                        "focus-visible:[&_*]:text-dark-base-primary",
+                        "hover:outline-light-base-secondary",
+                        "focus-visible:outline-light-base-secondary",
+                        "light:border-base-700",
+                        "overflow-clip",
+                        "rounded-sm",
+                        "focus-visible:outline",
+                        "focus-visible:outline-offset-4",
+                        "h-[25px]",
+                        "px-3",
+                        "md:hidden"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 0,
+                        "height": 0
+                      },
+                      "layout": {
+                        "display": "none",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "classes": [
+            "relative",
+            "mx-auto",
+            "grid",
+            "h-auto",
+            "w-full",
+            "grid-cols-4",
+            "gap-x-4",
+            "lg:grid-cols-12",
+            "lg:gap-x-6",
+            "my-20",
+            "bg-transparent",
+            "px-4",
+            "first:mt-4",
+            "lg:mt-20",
+            "lg:mb-30",
+            "lg:px-9",
+            "first:lg:mt-10",
+            "auto-rows-max"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 1905,
+            "height": 1132
+          },
+          "layout": {
+            "display": "grid",
+            "position": "relative",
+            "flexDirection": "row",
+            "justifyContent": "normal",
+            "alignItems": "normal",
+            "gap": "normal 24px"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "border-base-800",
+                "col-span-full",
+                "border-t",
+                "pt-4"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 1833,
+                "height": 98
+              },
+              "layout": {
+                "display": "block",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "flex",
+                    "w-full",
+                    "justify-between",
+                    "md:items-start"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 25
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "alignItems": "flex-start",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "text-pretty",
+                        "font-mono",
+                        "text-[14px]",
+                        "leading-[100%]",
+                        "tracking-[-0.0175rem]",
+                        "text-gl",
+                        "invisible",
+                        "inline-flex",
+                        "items-center",
+                        "uppercase",
+                        "[&>[data-slot='badge-icon']]:border-transparent",
+                        "[&>[data-slot='badge-icon']]:bg-accent-300",
+                        "[&_*]:text-base-500",
+                        "gap-3"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 104,
+                        "height": 12
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "center",
+                        "gap": "12px"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "group",
+                        "relative",
+                        "w-max",
+                        "cursor-pointer",
+                        "items-center",
+                        "justify-center",
+                        "border",
+                        "border-transparent",
+                        "transition-colors",
+                        "duration-150",
+                        "will-change-transform",
+                        "disabled:cursor-not-allowed",
+                        "disabled:opacity-50",
+                        "[&_*]:transition-colors",
+                        "[&_*]:duration-150",
+                        "bg-base-1000",
+                        "light:bg-dark-base-primary",
+                        "[&_*]:text-light-base-primary",
+                        "hover:bg-light-base-secondary",
+                        "focus-visible:bg-light-base-secondary",
+                        "hover:[&_*]:text-dark-base-primary",
+                        "focus-visible:[&_*]:text-dark-base-primary",
+                        "hover:outline-light-base-secondary",
+                        "focus-visible:outline-light-base-secondary",
+                        "light:border-base-700",
+                        "overflow-clip",
+                        "rounded-sm",
+                        "focus-visible:outline",
+                        "focus-visible:outline-offset-4",
+                        "h-[25px]",
+                        "px-3",
+                        "hidden",
+                        "md:flex"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 91,
+                        "height": 25
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "flex",
+                    "flex-col",
+                    "gap-y-6"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 56
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "column",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "24px normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "h2",
+                      "id": null,
+                      "classes": [
+                        "text-foreground",
+                        "font-normal",
+                        "text-[26px]",
+                        "leading-[100%]",
+                        "tracking-[-0.0325rem]",
+                        "lg:text-[36px]",
+                        "lg:tracking-[-0.045rem]",
+                        "pt-5"
+                      ],
+                      "role": null,
+                      "text": "Join us",
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 56
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "group",
+                        "relative",
+                        "inline-flex",
+                        "w-max",
+                        "cursor-pointer",
+                        "items-center",
+                        "justify-center",
+                        "border",
+                        "border-transparent",
+                        "transition-colors",
+                        "duration-150",
+                        "will-change-transform",
+                        "disabled:cursor-not-allowed",
+                        "disabled:opacity-50",
+                        "[&_*]:transition-colors",
+                        "[&_*]:duration-150",
+                        "bg-base-1000",
+                        "light:bg-dark-base-primary",
+                        "[&_*]:text-light-base-primary",
+                        "hover:bg-light-base-secondary",
+                        "focus-visible:bg-light-base-secondary",
+                        "hover:[&_*]:text-dark-base-primary",
+                        "focus-visible:[&_*]:text-dark-base-primary",
+                        "hover:outline-light-base-secondary",
+                        "focus-visible:outline-light-base-secondary",
+                        "light:border-base-700",
+                        "overflow-clip",
+                        "rounded-sm",
+                        "focus-visible:outline",
+                        "focus-visible:outline-offset-4",
+                        "h-[25px]",
+                        "px-3",
+                        "mt-4",
+                        "md:hidden"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 0,
+                        "height": 0
+                      },
+                      "layout": {
+                        "display": "none",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "ul",
+              "id": null,
+              "classes": [
+                "col-span-full",
+                "mt-7",
+                "flex",
+                "flex-col",
+                "lg:mt-20"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 1833,
+                "height": 954
+              },
+              "layout": {
+                "display": "flex",
+                "position": "static",
+                "flexDirection": "column",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "last:[&>a]:border-b-base-800",
+                    "last:[&>a]:hover:border-b-light-base-primary",
+                    "hover:[&+li>a]:border-t-transparent",
+                    "[&:has(+li:hover)>a]:border-b-transparent"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 1833,
+                    "height": 95
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "id": null,
+                      "classes": [
+                        "job-listing-link",
+                        "border-base-800",
+                        "hover:border-t-light-base-primary",
+                        "hover:border-b-light-base-primary",
+                        "group",
+                        "last:border-b-base-800",
+                        "relative",
+                        "-mb-px",
+                        "grid",
+                        "gap-4",
+                        "border-t",
+                        "border-b",
+                        "border-b-transparent",
+                        "py-4",
+                        "transition-[background-color]",
+                        "duration-0",
+                        "hover:z-10",
+                        "hover:border-dashed",
+                        "md:grid-cols-[150px_1fr_auto]",
+                        "md:gap-13",
+                        "lg:py-6"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 1833,
+                        "height": 96
+                      },
+                      "layout": {
+                        "display": "grid",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "52px"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "section",
+      "id": null,
+      "classes": [
+        "relative",
+        "mx-auto",
+        "grid",
+        "h-auto",
+        "w-full",
+        "grid-cols-4",
+        "gap-x-4",
+        "lg:grid-cols-12",
+        "lg:gap-x-6",
+        "my-20",
+        "bg-transparent",
+        "px-4",
+        "first:mt-4",
+        "lg:mt-20",
+        "lg:mb-30",
+        "lg:px-9",
+        "first:lg:mt-10",
+        "mt-0",
+        "mb-0",
+        "gap-y-14",
+        "md:gap-y-0"
+      ],
+      "role": null,
+      "text": null,
+      "dimensions": {
+        "width": 1905,
+        "height": 560
+      },
+      "layout": {
+        "display": "grid",
+        "position": "relative",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "0px 24px"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "id": "factory-card",
+          "classes": [
+            "bg-light-base-primary",
+            "light:bg-base-100",
+            "col-span-full",
+            "flex",
+            "h-[300px]",
+            "flex-col",
+            "justify-between",
+            "rounded-2xl",
+            "p-5",
+            "md:col-span-3",
+            "md:h-[400px]",
+            "lg:col-span-6",
+            "lg:h-[560px]",
+            "xl:col-span-4",
+            "xl:min-w-[540px]"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 595,
+            "height": 560
+          },
+          "layout": {
+            "display": "flex",
+            "position": "static",
+            "flexDirection": "column",
+            "justifyContent": "space-between",
+            "alignItems": "normal",
+            "gap": "normal"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "flex",
+                "w-full",
+                "items-center",
+                "justify-between"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 555,
+                "height": 12
+              },
+              "layout": {
+                "display": "flex",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "alignItems": "center",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "text-pretty",
+                    "font-mono",
+                    "text-[14px]",
+                    "leading-[100%]",
+                    "tracking-[-0.0175rem]",
+                    "text-gl",
+                    "invisible",
+                    "inline-flex",
+                    "items-center",
+                    "uppercase",
+                    "[&>[data-slot='badge-icon']]:border-transparent",
+                    "[&>[data-slot='badge-icon']]:bg-accent-300",
+                    "[&_*]:text-base-500",
+                    "gap-3",
+                    "[&_*]:!text-base-800"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 110,
+                    "height": 12
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "center",
+                    "gap": "12px"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "size-2",
+                        "transform-gpu",
+                        "rounded-full",
+                        "border",
+                        "will-change-[background-color]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 8,
+                        "height": 8
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "classes": [
+                        "whitespace-nowrap",
+                        "text-foreground",
+                        "text-pretty",
+                        "font-mono",
+                        "text-[12px]",
+                        "leading-[100%]",
+                        "tracking-[-0.015rem]",
+                        "uppercase"
+                      ],
+                      "role": null,
+                      "text": "Build with us",
+                      "dimensions": {
+                        "width": 90,
+                        "height": 12
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "p",
+                  "id": null,
+                  "classes": [
+                    "text-pretty",
+                    "font-mono",
+                    "text-[12px]",
+                    "leading-[100%]",
+                    "tracking-[-0.015rem]",
+                    "uppercase",
+                    "text-base-800"
+                  ],
+                  "role": null,
+                  "text": "start building",
+                  "dimensions": {
+                    "width": 97,
+                    "height": 12
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "flex",
+                "flex-col",
+                "gap-6"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 555,
+                "height": 215
+              },
+              "layout": {
+                "display": "flex",
+                "position": "static",
+                "flexDirection": "column",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "24px"
+              },
+              "children": [
+                {
+                  "tag": "svg",
+                  "id": "factory-logo",
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 40,
+                    "height": 40
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "path",
+                      "id": null,
+                      "classes": [
+                        "[object",
+                        "SVGAnimatedString]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 39,
+                        "height": 38
+                      },
+                      "layout": {
+                        "display": "inline",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "h2",
+                  "id": null,
+                  "classes": [
+                    "font-normal",
+                    "text-[30px]",
+                    "leading-[100%]",
+                    "tracking-[-0.05625rem]",
+                    "lg:text-[48px]",
+                    "lg:tracking-[-0.09rem]",
+                    "text-dark-base-secondary"
+                  ],
+                  "role": null,
+                  "text": "Ready to build the software of the future?",
+                  "dimensions": {
+                    "width": 555,
+                    "height": 96
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "a",
+                  "id": null,
+                  "classes": [
+                    "group",
+                    "relative",
+                    "inline-flex",
+                    "w-max",
+                    "cursor-pointer",
+                    "items-center",
+                    "justify-center",
+                    "border",
+                    "border-transparent",
+                    "transition-colors",
+                    "duration-150",
+                    "will-change-transform",
+                    "disabled:cursor-not-allowed",
+                    "disabled:opacity-50",
+                    "[&_*]:transition-colors",
+                    "[&_*]:duration-150",
+                    "bg-base-1000",
+                    "light:bg-dark-base-primary",
+                    "[&_*]:text-light-base-primary",
+                    "focus-visible:bg-light-base-secondary",
+                    "hover:[&_*]:text-dark-base-primary",
+                    "focus-visible:[&_*]:text-dark-base-primary",
+                    "hover:outline-light-base-secondary",
+                    "focus-visible:outline-light-base-secondary",
+                    "light:border-base-700",
+                    "overflow-clip",
+                    "rounded-sm",
+                    "focus-visible:outline",
+                    "focus-visible:outline-offset-4",
+                    "h-[31px]",
+                    "px-[14px]",
+                    "hover:bg-base-200"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 168,
+                    "height": 31
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "relative",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "span",
+                      "id": null,
+                      "classes": [
+                        "relative",
+                        "z-10",
+                        "flex",
+                        "items-center",
+                        "uppercase",
+                        "gap-2"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 138,
+                        "height": 16
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "center",
+                        "gap": "8px"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "pointer-events-none",
+                        "absolute",
+                        "inset-0",
+                        "opacity-0",
+                        "will-change-transform",
+                        "group-hover:animate-[delayedFadeIn_100ms_ease-out_forwards]",
+                        "group-focus-visible:animate-[delayedFadeIn_100ms_ease-out_forwards]"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 166,
+                        "height": 29
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "absolute",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "id": null,
+      "classes": [
+        "relative",
+        "grid",
+        "grid-cols-4",
+        "gap-x-4",
+        "lg:grid-cols-12",
+        "lg:gap-x-6",
+        "my-20",
+        "px-4",
+        "first:mt-4",
+        "lg:px-9",
+        "first:lg:mt-10",
+        "bg-dark-base-secondary",
+        "mx-auto",
+        "mb-4",
+        "h-auto",
+        "min-h-[580px]",
+        "w-[calc(100%-32px)]",
+        "rounded-xl",
+        "!p-0",
+        "md:min-h-[550px]",
+        "lg:mt-14",
+        "lg:mb-10",
+        "lg:min-h-[430px]",
+        "lg:w-[calc(100%-72px)]",
+        "lg:rounded-3xl"
+      ],
+      "role": null,
+      "text": null,
+      "dimensions": {
+        "width": 1833,
+        "height": 430
+      },
+      "layout": {
+        "display": "grid",
+        "position": "relative",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal 24px"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "id": null,
+          "classes": [
+            "text-pretty",
+            "font-mono",
+            "text-[14px]",
+            "leading-[100%]",
+            "tracking-[-0.0175rem]",
+            "text-gl",
+            "invisible",
+            "inline-flex",
+            "items-center",
+            "uppercase",
+            "[&>[data-slot='badge-icon']]:border-transparent",
+            "[&>[data-slot='badge-icon']]:bg-accent-300",
+            "[&_*]:text-base-500",
+            "gap-3",
+            "absolute",
+            "top-6",
+            "left-4",
+            "lg:top-8",
+            "lg:left-8"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 62,
+            "height": 12
+          },
+          "layout": {
+            "display": "flex",
+            "position": "absolute",
+            "flexDirection": "row",
+            "justifyContent": "normal",
+            "alignItems": "center",
+            "gap": "12px"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "size-2",
+                "transform-gpu",
+                "rounded-full",
+                "border",
+                "will-change-[background-color]"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 8,
+                "height": 8
+              },
+              "layout": {
+                "display": "block",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": []
+            },
+            {
+              "tag": "p",
+              "id": null,
+              "classes": [
+                "whitespace-nowrap",
+                "text-foreground",
+                "text-pretty",
+                "font-mono",
+                "text-[12px]",
+                "leading-[100%]",
+                "tracking-[-0.015rem]",
+                "uppercase"
+              ],
+              "role": null,
+              "text": "Footer",
+              "dimensions": {
+                "width": 42,
+                "height": 12
+              },
+              "layout": {
+                "display": "block",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "classes": [
+            "absolute",
+            "bottom-4",
+            "left-4",
+            "hidden",
+            "md:block",
+            "lg:bottom-5",
+            "lg:left-8"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 327,
+            "height": 65
+          },
+          "layout": {
+            "display": "block",
+            "position": "absolute",
+            "flexDirection": "row",
+            "justifyContent": "normal",
+            "alignItems": "normal",
+            "gap": "normal"
+          },
+          "children": [
+            {
+              "tag": "svg",
+              "id": null,
+              "classes": [
+                "[object",
+                "SVGAnimatedString]"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 327,
+                "height": 65
+              },
+              "layout": {
+                "display": "block",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "path",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 26,
+                    "height": 34
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "path",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 35,
+                    "height": 34
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "path",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 34,
+                    "height": 35
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "path",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 28,
+                    "height": 34
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "path",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 36,
+                    "height": 35
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "path",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 28,
+                    "height": 34
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "path",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 31,
+                    "height": 34
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "path",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 49,
+                    "height": 48
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                },
+                {
+                  "tag": "circle",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 60,
+                    "height": 60
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "classes": [
+            "absolute",
+            "bottom-6",
+            "left-4",
+            "md:hidden"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 0,
+            "height": 0
+          },
+          "layout": {
+            "display": "none",
+            "position": "absolute",
+            "flexDirection": "row",
+            "justifyContent": "normal",
+            "alignItems": "normal",
+            "gap": "normal"
+          },
+          "children": [
+            {
+              "tag": "svg",
+              "id": null,
+              "classes": [
+                "[object",
+                "SVGAnimatedString]"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 0,
+                "height": 0
+              },
+              "layout": {
+                "display": "block",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "normal",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "path",
+                  "id": null,
+                  "classes": [
+                    "[object",
+                    "SVGAnimatedString]"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 0,
+                    "height": 0
+                  },
+                  "layout": {
+                    "display": "inline",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "classes": [
+            "col-span-full",
+            "flex",
+            "h-full",
+            "flex-col",
+            "pt-28",
+            "pb-8",
+            "pl-4",
+            "lg:col-span-5",
+            "lg:col-start-8",
+            "lg:pr-4",
+            "lg:pl-0",
+            "xl:col-span-4",
+            "xl:col-start-9"
+          ],
+          "role": null,
+          "text": null,
+          "dimensions": {
+            "width": 595,
+            "height": 430
+          },
+          "layout": {
+            "display": "flex",
+            "position": "static",
+            "flexDirection": "column",
+            "justifyContent": "normal",
+            "alignItems": "normal",
+            "gap": "normal"
+          },
+          "children": [
+            {
+              "tag": "ul",
+              "id": null,
+              "classes": [
+                "mb-10",
+                "flex",
+                "flex-wrap",
+                "gap-x-12",
+                "gap-y-8",
+                "pr-6",
+                "lg:flex-nowrap",
+                "lg:justify-between",
+                "lg:gap-x-4",
+                "lg:gap-y-0",
+                "2xl:max-w-[76%]",
+                "2xl:pr-0"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 440,
+                "height": 138
+              },
+              "layout": {
+                "display": "flex",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "alignItems": "normal",
+                "gap": "0px 16px"
+              },
+              "children": [
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "w-fit"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 90,
+                    "height": 138
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "classes": [
+                        "text-foreground",
+                        "text-pretty",
+                        "font-sans",
+                        "text-[14px]",
+                        "leading-[100%]",
+                        "mb-3.5"
+                      ],
+                      "role": null,
+                      "text": "Resources",
+                      "dimensions": {
+                        "width": 90,
+                        "height": 14
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "ul",
+                      "id": null,
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "gap-2.5"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 90,
+                        "height": 86
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "10px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "w-fit"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 65,
+                    "height": 138
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "classes": [
+                        "text-foreground",
+                        "text-pretty",
+                        "font-sans",
+                        "text-[14px]",
+                        "leading-[100%]",
+                        "mb-3.5"
+                      ],
+                      "role": null,
+                      "text": "Company",
+                      "dimensions": {
+                        "width": 65,
+                        "height": 14
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "ul",
+                      "id": null,
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "gap-2.5"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 65,
+                        "height": 62
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "10px"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "id": null,
+                  "classes": [
+                    "w-fit"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 106,
+                    "height": 138
+                  },
+                  "layout": {
+                    "display": "list-item",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "id": null,
+                      "classes": [
+                        "text-foreground",
+                        "text-pretty",
+                        "font-sans",
+                        "text-[14px]",
+                        "leading-[100%]",
+                        "mb-3.5"
+                      ],
+                      "role": null,
+                      "text": "Legal",
+                      "dimensions": {
+                        "width": 106,
+                        "height": 14
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "ul",
+                      "id": null,
+                      "classes": [
+                        "flex",
+                        "flex-col",
+                        "gap-2.5"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 106,
+                        "height": 110
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "column",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "10px"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "flex",
+                "items-center"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 579,
+                "height": 34
+              },
+              "layout": {
+                "display": "flex",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "normal",
+                "alignItems": "center",
+                "gap": "normal"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "id": null,
+                  "classes": [
+                    "border-base-800",
+                    "bg-dark-base-secondary",
+                    "relative",
+                    "flex",
+                    "rounded-lg",
+                    "border",
+                    "p-1",
+                    "min-w-max"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 120,
+                    "height": 34
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "relative",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "id": null,
+                      "classes": [
+                        "theme-selector-indicator",
+                        "bg-light-base-secondary",
+                        "absolute",
+                        "top-1",
+                        "rounded-sm",
+                        "ease-out",
+                        "h-6",
+                        "transition-all",
+                        "duration-300"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 62,
+                        "height": 24
+                      },
+                      "layout": {
+                        "display": "block",
+                        "position": "absolute",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "normal",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "button",
+                      "id": null,
+                      "classes": [
+                        "theme-selector-button",
+                        "relative",
+                        "z-10",
+                        "flex",
+                        "cursor-pointer",
+                        "items-center",
+                        "justify-center",
+                        "rounded-sm",
+                        "h-6",
+                        "gap-1",
+                        "px-2",
+                        "transition-all",
+                        "duration-200",
+                        "[&_*]:text-dark-base-primary",
+                        "[&_path]:fill-dark-base-primary"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 62,
+                        "height": 24
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "gap": "4px"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "button",
+                      "id": null,
+                      "classes": [
+                        "theme-selector-button",
+                        "relative",
+                        "z-10",
+                        "flex",
+                        "cursor-pointer",
+                        "items-center",
+                        "justify-center",
+                        "rounded-sm",
+                        "h-6",
+                        "gap-1",
+                        "px-2",
+                        "transition-all",
+                        "duration-200",
+                        "[&_*]:text-light-base-primary",
+                        "hover:text-light-base-primary",
+                        "hover:[&_path]:fill-light-base-primary"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 24,
+                        "height": 24
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "gap": "4px"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "button",
+                      "id": null,
+                      "classes": [
+                        "theme-selector-button",
+                        "relative",
+                        "z-10",
+                        "flex",
+                        "cursor-pointer",
+                        "items-center",
+                        "justify-center",
+                        "rounded-sm",
+                        "h-6",
+                        "gap-1",
+                        "px-2",
+                        "transition-all",
+                        "duration-200",
+                        "[&_*]:text-light-base-primary",
+                        "hover:text-light-base-primary",
+                        "hover:[&_path]:fill-light-base-primary"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 24,
+                        "height": 24
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "relative",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "alignItems": "center",
+                        "gap": "4px"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "classes": [
+                "mt-auto",
+                "-mb-1.5",
+                "flex",
+                "flex-col",
+                "flex-wrap",
+                "items-end",
+                "justify-end",
+                "gap-x-3",
+                "gap-y-1",
+                "pr-4",
+                "lg:max-w-[90%]",
+                "lg:flex-row",
+                "lg:items-center",
+                "lg:justify-between",
+                "lg:pr-0"
+              ],
+              "role": null,
+              "text": null,
+              "dimensions": {
+                "width": 521,
+                "height": 24
+              },
+              "layout": {
+                "display": "flex",
+                "position": "static",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "alignItems": "center",
+                "gap": "4px 12px"
+              },
+              "children": [
+                {
+                  "tag": "ul",
+                  "id": null,
+                  "classes": [
+                    "flex",
+                    "gap-2"
+                  ],
+                  "role": null,
+                  "text": null,
+                  "dimensions": {
+                    "width": 188,
+                    "height": 24
+                  },
+                  "layout": {
+                    "display": "flex",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "8px"
+                  },
+                  "children": [
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "classes": [
+                        "inline-flex",
+                        "items-center"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 69,
+                        "height": 24
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "center",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "classes": [
+                        "inline-flex",
+                        "items-center"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 60,
+                        "height": 24
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "center",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    },
+                    {
+                      "tag": "li",
+                      "id": null,
+                      "classes": [
+                        "inline-flex",
+                        "items-center"
+                      ],
+                      "role": null,
+                      "text": null,
+                      "dimensions": {
+                        "width": 44,
+                        "height": 24
+                      },
+                      "layout": {
+                        "display": "flex",
+                        "position": "static",
+                        "flexDirection": "row",
+                        "justifyContent": "normal",
+                        "alignItems": "center",
+                        "gap": "normal"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "p",
+                  "id": null,
+                  "classes": [
+                    "text-foreground",
+                    "text-pretty",
+                    "font-sans",
+                    "text-[14px]",
+                    "leading-[100%]"
+                  ],
+                  "role": null,
+                  "text": "@Factory",
+                  "dimensions": {
+                    "width": 224,
+                    "height": 14
+                  },
+                  "layout": {
+                    "display": "block",
+                    "position": "static",
+                    "flexDirection": "row",
+                    "justifyContent": "normal",
+                    "alignItems": "normal",
+                    "gap": "normal"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

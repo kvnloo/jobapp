@@ -27,12 +27,50 @@ Achieve pixel-perfect visual parity between the portfolio site and Factory.ai re
 ### Loop Structure
 ```
 WHILE visual_differences_exist:
+    0. STRUCTURAL → Extract and compare DOM/flex/grid patterns (BEFORE screenshots)
     1. CAPTURE → Take screenshots of both sites
     2. COMPARE → Analyze visual differences
     3. IDENTIFY → List specific discrepancies (priority order)
     4. FIX → Update code to address top 3 issues
     5. VERIFY → Re-capture and confirm fixes
     6. REPEAT → Continue until parity achieved
+```
+
+### Phase 0: Structural Analysis (CRITICAL - Run Before Screenshots)
+
+**Why this phase exists**: Screenshots compare pixels but miss structural layout issues. A component can look 90% correct in a screenshot but have fundamentally wrong flex/grid structure that causes layout bugs at different viewport sizes or content lengths.
+
+**Extract from `component_tree.json` and compare:**
+
+1. **Flex patterns**:
+   - `justify-between` vs `mt-auto` (Factory uses justify-between with 2-child wrapper)
+   - `h-full` chain from parent to child
+   - `gap` values between siblings
+
+2. **Grid patterns**:
+   - Column counts: `grid-cols-4 lg:grid-cols-12`
+   - Column spans: `col-span-5`, `col-span-7`
+   - Responsive breakpoints
+
+3. **DOM structure**:
+   - Child count per flex container (Factory groups content into wrappers)
+   - Wrapper groupings vs flat siblings
+   - Semantic nesting depth
+
+4. **Height inheritance**:
+   - `h-screen` → `h-full` cascade must propagate correctly
+   - Sticky containers need explicit height chain
+
+**Structural Discrepancy Format**:
+```xml
+<structural-discrepancy>
+  <component>ScrollShowcase left panel</component>
+  <issue>mt-auto not working - nav not anchored to bottom</issue>
+  <factory-pattern>flex flex-col justify-between with 2 children (content-wrapper + nav)</factory-pattern>
+  <current-pattern>flex flex-col with 4 flat siblings + mt-auto on last</current-pattern>
+  <fix>Add justify-between, wrap first 3 children in div, remove mt-auto</fix>
+  <priority>critical</priority>
+</structural-discrepancy>
 ```
 
 ### Phase 1: Initial Capture
@@ -199,6 +237,15 @@ When complete, create SUMMARY.md with:
 ---
 
 ## Success Criteria
+
+### Structural (Phase 0 - Check First)
+- [ ] Flex parents have correct `justify-content` (justify-between for top/bottom anchoring)
+- [ ] Content groups wrapped in divs (not flat siblings)
+- [ ] `h-full` cascade propagates from `h-screen` parent through all children
+- [ ] Border colors use `base-800` (not `base-700` - too prominent)
+- [ ] Grid uses 12-column system with correct spans
+
+### Visual (Phases 1-5)
 - [ ] Header matches Factory.ai (sticky, blur backdrop, colors)
 - [ ] Hero section matches (typography, spacing, terminal element)
 - [ ] Project cards match (border, background, hover states)
@@ -206,6 +253,76 @@ When complete, create SUMMARY.md with:
 - [ ] Fonts render correctly (Geist loaded)
 - [ ] Animations are smooth and match timing
 - [ ] Responsive behavior matches at all breakpoints
+- [ ] Headlines 48-56px on desktop with 100% line-height
+- [ ] Body text uses sans font (not mono) where appropriate
+
+---
+
+## Known Structural Issues (Apply First)
+
+These issues were identified via k-voting synthesis from 10 parallel analysis agents. Apply these fixes in Phase 0 before proceeding to visual comparison.
+
+### ScrollShowcase Component
+**File:** `src/components/shared/ScrollShowcase.tsx`
+
+#### Issue 1: Left Panel Layout (ROOT CAUSE - Critical)
+**Problem:** `mt-auto` doesn't anchor navigation to bottom because container has 4 flat siblings instead of 2 wrapped groups.
+
+**Current (broken):**
+```tsx
+<div className="flex h-full flex-col">
+  <div>Badge</div>      <!-- flat sibling 1 -->
+  <h2>Headline</h2>     <!-- flat sibling 2 -->
+  <p>Description</p>    <!-- flat sibling 3 -->
+  <div className="mt-auto">Nav</div>  <!-- mt-auto ineffective -->
+</div>
+```
+
+**Factory.ai pattern (correct):**
+```tsx
+<div className="flex h-full flex-col justify-between">
+  <div>                 <!-- wrapper child 1 -->
+    <div>Badge</div>
+    <h2>Headline</h2>
+    <p>Description</p>
+  </div>
+  <div>Nav</div>        <!-- child 2 - pushed to bottom -->
+</div>
+```
+
+**Fix:**
+1. Add `justify-between` to left panel container (~line 578)
+2. Wrap badge + headline + description in `<div>`
+3. Remove `mt-auto` from navigation div, keep `pt-6`
+
+#### Issue 2: Height Cascade
+**Problem:** `h-full` not propagating through grid children.
+
+**Fix:**
+- Add `h-full` to right panel container (~line 659)
+- Add `md:h-full` to both column children (~lines 662, 708)
+
+#### Issue 3: Typography
+**Problem:** Headlines too small, body using mono font.
+
+**Fix:**
+- Headline: `text-[28px] lg:text-[36px] xl:text-[42px]` → `text-[32px] lg:text-[48px] xl:text-[56px] leading-[100%]`
+- Description: `font-mono text-[13px]` → `font-sans text-[14px] lg:text-[16px]`
+
+#### Issue 4: Polish
+**Problem:** Borders too prominent, gaps too tight.
+
+**Fix:**
+- All `border-base-700` → `border-base-800`
+- Tab gaps: `gap-1` → `gap-2 lg:gap-3`
+- Section label gaps: `gap-1.5` → `gap-3 lg:gap-4`
+
+### Validation After Fixes
+- [ ] Pills anchored to bottom-left of viewport
+- [ ] Headlines 48-56px on desktop
+- [ ] Body uses sans font (not mono)
+- [ ] Borders subtle (base-800)
+- [ ] Spacing feels airy
 
 ---
 
@@ -213,8 +330,9 @@ When complete, create SUMMARY.md with:
 ```
 Run this prompt using Task agents. The workflow should:
 1. Start dev server if not running
-2. Capture initial screenshots
-3. Enter comparison loop
-4. Apply fixes iteratively
-5. Report completion with evidence
+2. Apply Known Structural Issues fixes FIRST (Phase 0)
+3. Capture initial screenshots
+4. Enter comparison loop
+5. Apply remaining fixes iteratively
+6. Report completion with evidence
 ```

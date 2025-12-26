@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ profile, className = '' }: HeroSectionProps) {
   return (
-    <section id="hero" className={`relative mx-auto grid h-auto w-full grid-cols-4 gap-x-4 lg:grid-cols-12 lg:gap-x-6 my-20 bg-transparent px-4 first:mt-4 lg:mt-20 lg:px-9 first:lg:mt-10 lg:mb-[7.5rem] lg:h-[calc(100dvh-160px)] lg:max-h-[725px] lg:min-h-[620px] xl:mb-[5.5rem] ${className}`}>
+    <section id="hero" className={`relative mx-auto grid h-auto w-full grid-cols-4 gap-x-4 lg:grid-cols-12 lg:gap-x-6 my-12 sm:my-20 bg-transparent px-4 first:mt-4 lg:mt-20 lg:px-9 first:lg:mt-10 lg:mb-[7.5rem] lg:h-[calc(100dvh-160px)] lg:max-h-[725px] lg:min-h-[620px] xl:mb-[5.5rem] overflow-x-hidden ${className}`}>
 
       {/* Floating Ambient Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -43,7 +43,7 @@ export function HeroSection({ profile, className = '' }: HeroSectionProps) {
         <div className="mt-12 flex flex-col gap-3 sm:flex-row lg:mt-0">
           <a
             data-slot="button"
-            className="btn-slide-pattern group relative inline-flex w-max cursor-pointer items-center justify-center border transition-all duration-150 will-change-transform disabled:cursor-not-allowed disabled:opacity-50 [&amp;_*]:transition-colors [&amp;_*]:duration-150 bg-light-base-secondary hover:bg-dark-base-primary focus-visible:bg-dark-base-primary [&amp;_*]:text-dark-base-primary hover:[&amp;_*]:text-light-base-secondary focus-visible:[&amp;_*]:text-light-base-secondary hover:border-base-600 focus-visible:border-base-600 focus-visible:outline-light-base-secondary overflow-clip rounded-sm border-transparent focus-visible:outline focus-visible:outline-offset-4 h-[40px] px-6 hover:scale-[1.02] hover:shadow-lg animate-phase-4a"
+            className="btn-slide-pattern group relative inline-flex w-max cursor-pointer items-center justify-center border transition-all duration-150 will-change-transform disabled:cursor-not-allowed disabled:opacity-50 [&amp;_*]:transition-colors [&amp;_*]:duration-150 bg-light-base-secondary hover:bg-dark-base-primary focus-visible:bg-dark-base-primary [&amp;_*]:text-dark-base-primary hover:[&amp;_*]:text-light-base-secondary focus-visible:[&amp;_*]:text-light-base-secondary hover:border-base-600 focus-visible:border-base-600 focus-visible:outline-light-base-secondary overflow-clip rounded-sm border-transparent focus-visible:outline focus-visible:outline-offset-4 min-h-[44px] h-[44px] px-6 hover:scale-[1.02] hover:shadow-lg animate-phase-4a"
             href="#projects"
           >
             <span className="relative z-10 flex items-center uppercase gap-2">
@@ -68,7 +68,7 @@ export function HeroSection({ profile, className = '' }: HeroSectionProps) {
 
           <a
             data-slot="button"
-            className="group relative inline-flex w-max cursor-pointer items-center justify-center border border-base-700 transition-all duration-150 will-change-transform disabled:cursor-not-allowed disabled:opacity-50 [&amp;_*]:transition-colors [&amp;_*]:duration-150 bg-transparent [&amp;_*]:text-light-base-primary hover:border-accent-200 focus-visible:border-accent-200 hover:[&amp;_*]:text-accent-200 focus-visible:[&amp;_*]:text-accent-200 hover:outline-light-base-secondary focus-visible:outline-light-base-secondary overflow-clip rounded-sm focus-visible:outline focus-visible:outline-offset-4 h-[40px] px-6 animate-phase-4b"
+            className="group relative inline-flex w-max cursor-pointer items-center justify-center border border-base-700 transition-all duration-150 will-change-transform disabled:cursor-not-allowed disabled:opacity-50 [&amp;_*]:transition-colors [&amp;_*]:duration-150 bg-transparent [&amp;_*]:text-light-base-primary hover:border-accent-200 focus-visible:border-accent-200 hover:[&amp;_*]:text-accent-200 focus-visible:[&amp;_*]:text-accent-200 hover:outline-light-base-secondary focus-visible:outline-light-base-secondary overflow-clip rounded-sm focus-visible:outline focus-visible:outline-offset-4 min-h-[44px] h-[44px] px-6 animate-phase-4b"
             href="#about"
           >
             <span className="relative z-10 flex items-center uppercase">
@@ -80,12 +80,12 @@ export function HeroSection({ profile, className = '' }: HeroSectionProps) {
         </div>
       </div>
 
-      {/* Right side - Rive Hero Animation */}
-      <div className="col-span-4 lg:col-span-6 relative flex items-center justify-center animate-phase-5-container">
-        <div className="relative w-full h-[300px] lg:h-[500px] flex items-center justify-center">
+      {/* Right side - Rive Hero Animation - responsive sizing */}
+      <div className="col-span-4 lg:col-span-6 relative flex items-center justify-center animate-phase-5-container mt-8 sm:mt-0">
+        <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center max-w-full">
           <RiveAnimation
             src="/assets/rive/factory_hero_alt.riv"
-            className="w-full h-full"
+            className="w-full h-full object-contain"
             autoplay={true}
           />
         </div>

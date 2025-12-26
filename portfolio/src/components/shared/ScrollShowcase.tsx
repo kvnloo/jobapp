@@ -543,11 +543,11 @@ export function ScrollShowcase() {
     <section
       ref={containerRef}
       id="showcase"
-      className="relative bg-dark-base-primary bg-[url('/assets/bg-lines.png')]"
+      className="relative bg-dark-base-primary bg-[url('/assets/bg-lines.png')] overflow-x-hidden"
       style={{ height: `${showcaseItems.length * sectionHeight}vh` }}
     >
       {/* Sticky container - full viewport */}
-      <div className="sticky top-0 h-screen overflow-hidden">
+      <div className="sticky top-0 h-screen overflow-hidden overflow-x-hidden">
 
         {/* Section label - top left */}
         <div className="absolute top-8 left-4 lg:left-9 z-20">
@@ -617,21 +617,21 @@ export function ScrollShowcase() {
               </p>
 
               {/* Section Navigation - pushed to bottom with mt-auto */}
-              <div className="mt-auto pt-8">
-                {/* Progress pills */}
-                <div className="border-base-700 relative flex rounded-full border p-[3px] w-fit flex-row space-x-1 px-1 mb-3">
+              <div className="mt-auto pt-6 sm:pt-8">
+                {/* Progress pills - touch-friendly on mobile */}
+                <div className="border-base-700 relative flex rounded-full border p-[3px] w-fit flex-row space-x-1.5 sm:space-x-1 px-1.5 sm:px-1 mb-3">
                   {showcaseItems.map((_, index) => (
                     <button
                       key={index}
-                      className="flex items-center justify-center cursor-pointer"
+                      className="flex items-center justify-center cursor-pointer min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0 -m-3 sm:m-0 touch-manipulation"
                       aria-label={`Go to step ${index + 1}`}
                       onClick={() => scrollToSection(index)}
                     >
                       <div
                         className={`relative overflow-hidden rounded-full transition-all duration-300 ease-linear ${
                           index === activeIndex
-                            ? 'bg-base-700 h-2 w-8'
-                            : 'size-2 bg-base-700'
+                            ? 'bg-base-700 h-2.5 sm:h-2 w-10 sm:w-8'
+                            : 'size-2.5 sm:size-2 bg-base-700'
                         }`}
                       >
                         {index === activeIndex && (
@@ -645,8 +645,8 @@ export function ScrollShowcase() {
                   ))}
                 </div>
 
-                {/* Section labels */}
-                <ul className="flex flex-col gap-1.5">
+                {/* Section labels - touch-friendly on mobile */}
+                <ul className="flex flex-col gap-2 sm:gap-1.5">
                   {showcaseItems.map((item, index) => {
                     const isActive = index === activeIndex;
                     const isPassed = index < activeIndex;
@@ -657,10 +657,10 @@ export function ScrollShowcase() {
                       <li key={item.number} className="flex">
                         <button
                           aria-label={`Go to step ${index + 1}`}
-                          className="cursor-pointer text-left transition-opacity duration-200 hover:opacity-80"
+                          className="cursor-pointer text-left transition-opacity duration-200 hover:opacity-80 active:opacity-60 min-h-[44px] sm:min-h-0 flex items-center touch-manipulation"
                           onClick={() => scrollToSection(index)}
                         >
-                          <p className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase transition-colors duration-300">
+                          <p className="text-pretty font-mono text-[13px] sm:text-[12px] leading-[100%] tracking-[-0.015rem] uppercase transition-colors duration-300">
                             <span className={`transition-colors duration-300 ${numberColor}`}>{item.number}</span>
                             {' '}
                             <span className={`transition-colors duration-300 ${titleColor}`}>{item.title}</span>
@@ -684,8 +684,8 @@ export function ScrollShowcase() {
                   {showcaseItems[activeIndex].number} - {showcaseItems[activeIndex].title.toUpperCase()}
                 </p>
 
-                {/* Item tabs/selector */}
-                <div className="flex flex-wrap gap-1">
+                {/* Item tabs/selector - touch-friendly sizing */}
+                <div className="flex flex-wrap gap-1.5 sm:gap-1">
                   {currentItems.slice(0, 8).map((item, index) => {
                     const itemTitle = 'title' in item ? (item as { title: string }).title :
                       'name' in item ? (item as { name: string }).name :
@@ -694,10 +694,10 @@ export function ScrollShowcase() {
                       <button
                         key={index}
                         onClick={() => setSelectedItemIndex(index)}
-                        className={`px-3 py-1.5 text-pretty font-mono text-[10px] leading-[100%] tracking-[-0.0125rem] uppercase border rounded-sm transition-all ${
+                        className={`min-h-[44px] sm:min-h-[32px] px-3 py-2 sm:py-1.5 text-pretty font-mono text-[11px] sm:text-[10px] leading-[100%] tracking-[-0.0125rem] uppercase border rounded-sm transition-all touch-manipulation ${
                           selectedItemIndex === index
                             ? 'bg-accent-200/10 border-accent-200/50 text-accent-200'
-                            : 'border-base-700 text-base-500 hover:border-base-600 hover:text-base-400'
+                            : 'border-base-700 text-base-500 hover:border-base-600 hover:text-base-400 active:bg-base-900'
                         }`}
                       >
                         {itemTitle.length > 12 ? itemTitle.slice(0, 12) + '...' : itemTitle}
@@ -711,19 +711,19 @@ export function ScrollShowcase() {
                   {renderDetailView()}
                 </div>
 
-                {/* Action buttons */}
+                {/* Action buttons - touch-friendly sizing */}
                 <div className="flex gap-3 mt-auto pt-4">
-                  <button className="flex-1 py-2.5 px-4 bg-accent-200 text-dark-base-primary font-mono text-[11px] uppercase tracking-wide rounded-sm hover:bg-accent-100 transition-colors">
+                  <button className="flex-1 min-h-[44px] py-3 px-4 bg-accent-200 text-dark-base-primary font-mono text-[11px] uppercase tracking-wide rounded-sm hover:bg-accent-100 active:bg-accent-300 transition-colors touch-manipulation">
                     View Details
                   </button>
-                  <button className="py-2.5 px-4 border border-base-700 text-base-400 font-mono text-[11px] uppercase tracking-wide rounded-sm hover:border-base-600 hover:text-base-300 transition-colors">
+                  <button className="min-h-[44px] py-3 px-4 border border-base-700 text-base-400 font-mono text-[11px] uppercase tracking-wide rounded-sm hover:border-base-600 hover:text-base-300 active:bg-base-900 transition-colors touch-manipulation">
                     Learn More
                   </button>
                 </div>
               </div>
 
-              {/* Right column of right panel - Preview/Visual */}
-              <div className="border-base-700 flex flex-col gap-6 border-t pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-6">
+              {/* Right column of right panel - Preview/Visual - hidden on very small screens */}
+              <div className="hidden sm:flex border-base-700 flex-col gap-6 border-t pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-6">
 
                 {/* Preview label */}
                 <p className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase text-base-500">
@@ -731,7 +731,7 @@ export function ScrollShowcase() {
                 </p>
 
                 {/* Preview content */}
-                <div className="flex-1 border border-base-800 rounded-md bg-dark-base-secondary/50 overflow-hidden relative min-h-[300px]">
+                <div className="flex-1 border border-base-800 rounded-md bg-dark-base-secondary/50 overflow-hidden relative min-h-[200px] sm:min-h-[280px] md:min-h-[300px]">
                   {renderPreviewContent()}
                 </div>
               </div>

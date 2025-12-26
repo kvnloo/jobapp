@@ -568,10 +568,10 @@ export function ScrollShowcase() {
             isContentVisible ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
         >
-          <h2 className="text-foreground font-normal text-[32px] lg:text-[48px] leading-[100%] tracking-[-0.08rem] mb-4">
+          <h2 className="text-foreground font-normal text-[32px] md:text-[40px] lg:text-[48px] leading-[100%] tracking-[-0.08rem] mb-4">
             {sectionHeader.title}
           </h2>
-          <p className="text-base-500 font-mono text-[14px] lg:text-[16px]">
+          <p className="text-base-500 font-mono text-[14px] md:text-[15px] lg:text-[16px]">
             {sectionHeader.subtitle}
           </p>
           <div className="mt-8 flex items-center justify-center gap-2 text-base-600">
@@ -589,11 +589,11 @@ export function ScrollShowcase() {
             isContentVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         >
-          {/* 12-column grid layout like Factory.ai */}
-          <div className="h-full grid grid-cols-4 gap-x-4 lg:grid-cols-12 lg:gap-x-6 px-4 lg:px-0">
+          {/* 12-column grid layout like Factory.ai - responsive for tablet */}
+          <div className="h-full grid grid-cols-4 gap-x-4 md:grid-cols-8 md:gap-x-5 lg:grid-cols-12 lg:gap-x-6 px-4 md:px-6 lg:px-0">
 
-            {/* Left Panel - Badge, headline, description at top; section nav at bottom (5 cols on desktop) */}
-            <div className="col-span-full lg:col-span-5 border-base-700 relative flex h-full flex-col lg:border-r lg:pl-9 lg:pr-8 py-8">
+            {/* Left Panel - Badge, headline, description at top; section nav at bottom (responsive columns) */}
+            <div className="col-span-full md:col-span-3 lg:col-span-5 border-base-700 relative flex h-full flex-col md:border-r md:pr-4 lg:border-r lg:pl-9 lg:pr-8 py-8">
 
               {/* Badge/Label - at top */}
               <div className="inline-flex items-center gap-3 mb-4">
@@ -607,12 +607,12 @@ export function ScrollShowcase() {
               </div>
 
               {/* Main Headline - at top, below badge */}
-              <h2 className="text-foreground font-normal text-[28px] lg:text-[36px] xl:text-[42px] leading-[110%] tracking-[-0.04rem] lg:max-w-[400px]">
+              <h2 className="text-foreground font-normal text-[28px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[110%] tracking-[-0.04rem] md:max-w-[320px] lg:max-w-[400px]">
                 {sectionHeader.title}
               </h2>
 
               {/* Description - below headline */}
-              <p className="text-base-400 font-mono text-[13px] lg:text-[14px] leading-[160%] mt-4 lg:mt-6 lg:max-w-[390px]">
+              <p className="text-base-400 font-mono text-[13px] md:text-[13px] lg:text-[14px] leading-[160%] mt-4 md:mt-5 lg:mt-6 md:max-w-[280px] lg:max-w-[390px]">
                 {sectionHeader.subtitle}
               </p>
 
@@ -673,8 +673,8 @@ export function ScrollShowcase() {
               </div>
             </div>
 
-            {/* Right Panel - 2-column grid with details + preview (7 cols on desktop) */}
-            <div className="col-span-full lg:col-span-7 lg:col-start-6 grid gap-6 md:grid-cols-2 lg:pr-9 py-8">
+            {/* Right Panel - 2-column grid with details + preview (responsive columns) */}
+            <div className="col-span-full md:col-span-5 md:col-start-4 lg:col-span-7 lg:col-start-6 grid gap-4 md:gap-5 lg:gap-6 md:grid-cols-2 md:pl-4 lg:pl-0 lg:pr-9 py-8">
 
               {/* Left column of right panel - Item selector + Detail */}
               <div className="border-base-700 flex flex-col gap-6 border-t pt-6 md:border-t-0 md:pt-0">

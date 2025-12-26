@@ -79,7 +79,7 @@ export function ScrollShowcase() {
   // Get items for current section
   const getCurrentItems = () => {
     switch (activeIndex) {
-      case 0: return projects.slice(0, 6);
+      case 0: return projects; // All 8 projects
       case 1: return experience;
       case 2: return skills;
       case 3: return [
@@ -668,7 +668,7 @@ export function ScrollShowcase() {
 
                 {/* Item tabs/selector */}
                 <div className="flex flex-wrap gap-1">
-                  {currentItems.slice(0, 6).map((item, index) => {
+                  {currentItems.slice(0, 8).map((item, index) => {
                     const itemTitle = 'title' in item ? (item as { title: string }).title :
                       'name' in item ? (item as { name: string }).name :
                       'company' in item ? (item as { company: string }).company : `Item ${index + 1}`;

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 interface Section {
   id: string;
@@ -16,6 +16,7 @@ export function SectionDots() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const prevActiveRef = useRef('hero');
+  const rafRef = useRef<number | null>(null);
 
   // Delayed entrance after page load
   useEffect(() => {
@@ -23,9 +24,15 @@ export function SectionDots() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Track scroll progress within current section
-  useEffect(() => {
-    const handleScroll = () => {
+  // Optimized scroll handler using requestAnimationFrame for 60fps
+  const handleScroll = useCallback(() => {
+    // Cancel any pending animation frame
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+    }
+
+    // Batch visual updates in next animation frame
+    rafRef.current = requestAnimationFrame(() => {
       const currentIndex = sections.findIndex(s => s.id === activeSection);
       const currentEl = document.getElementById(activeSection);
       const nextSection = sections[currentIndex + 1];
@@ -40,11 +47,19 @@ export function SectionDots() {
           : Math.min(1, scrolled / (sectionHeight * 0.5));
         setScrollProgress(progress);
       }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    });
   }, [activeSection]);
+
+  // Track scroll progress within current section
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
+  }, [handleScroll]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

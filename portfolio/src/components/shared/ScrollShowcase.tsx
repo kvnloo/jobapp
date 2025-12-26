@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { projects } from '../../data/projects';
 import { experience } from '../../data/experience';
 import { skills } from '../../data/skills';
@@ -23,11 +23,20 @@ export function ScrollShowcase() {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
   const [isContentVisible, setIsContentVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const rafRef = useRef<number | null>(null);
+  const lastScrollRef = useRef<number>(0);
 
   const sectionHeight = 100; // vh per section
 
-  useEffect(() => {
-    const handleScroll = () => {
+  // Optimized scroll handler using requestAnimationFrame for 60fps
+  const handleScroll = useCallback(() => {
+    // Cancel any pending animation frame
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+    }
+
+    // Batch visual updates in next animation frame
+    rafRef.current = requestAnimationFrame(() => {
       if (!containerRef.current) return;
 
       const container = containerRef.current;
@@ -48,13 +57,22 @@ export function ScrollShowcase() {
         setActiveIndex(newIndex);
         setSelectedItemIndex(0);
       }
-    };
 
+      lastScrollRef.current = window.scrollY;
+    });
+  }, [activeIndex]);
+
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [activeIndex]);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
+  }, [handleScroll]);
 
   const scrollToSection = (index: number) => {
     if (containerRef.current) {

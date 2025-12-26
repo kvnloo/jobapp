@@ -1,0 +1,590 @@
+{
+  "feature": "Complete Factory.ai-Style Interactive CV/Resume",
+  "workflow_type": "feature",
+  "workflow_rationale": "This is feature completion work - the foundation is built (components, design system, data), but requires polish, optimization, and deployment to production. Workflow follows: validation \u2192 optimization \u2192 deployment \u2192 QA.",
+  "phases": [
+    {
+      "id": "phase-1-validation",
+      "name": "Component Validation & Testing",
+      "type": "implementation",
+      "description": "Verify all existing components render correctly and function as expected. Run existing tests and ensure no regressions.",
+      "depends_on": [],
+      "parallel_safe": true,
+      "subtasks": [
+        {
+          "id": "subtask-1-1",
+          "description": "Verify dev server starts and HeroSection renders with Rive animation",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "browser",
+            "url": "http://localhost:5173/",
+            "checks": [
+              "HeroSection visible with Rive animation",
+              "Particle effects animating",
+              "No console errors",
+              "Factory.ai orange accents visible"
+            ]
+          },
+          "status": "completed",
+          "notes": "Verified: Dev server starts on http://localhost:5173/, HeroSection renders with Rive animation (factory_hero_alt.riv - 360KB), particle effects animating via CSS keyframes (animate-float-1/2/3), Factory.ai orange accents visible (#ee6018). Fixed 2 TypeScript errors in ScrollShowcase.tsx (project.links.demo \u2192 live, profile.title \u2192 currentRole.title). Production build succeeds (409KB JS gzipped: 122KB).",
+          "updated_at": "2025-12-26T21:11:45.767902+00:00"
+        },
+        {
+          "id": "subtask-1-2",
+          "description": "Verify ScrollShowcase renders all 4 sections correctly",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "browser",
+            "url": "http://localhost:5173/#showcase",
+            "checks": [
+              "Projects section displays 8 projects",
+              "Experience section shows 7 roles",
+              "Skills section renders 9 categories",
+              "Background section shows profile info",
+              "Scroll animations trigger correctly"
+            ]
+          },
+          "status": "completed",
+          "notes": "Verified ScrollShowcase renders all 4 sections correctly. Fixed Projects section to display all 8 projects (was showing only 6). All data counts verified: 8 projects, 7 experience roles, 9 skill categories, profile info with bio/currentRole/links. Scroll animations work correctly with scroll event listener, progress calculation, and content visibility triggers. TypeScript compilation passes, production build succeeds (409KB JS, 122KB gzipped).",
+          "updated_at": "2025-12-26T21:16:15.896081+00:00"
+        },
+        {
+          "id": "subtask-1-3",
+          "description": "Verify navigation components (SectionDots, ScrollProgress) function",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "browser",
+            "url": "http://localhost:5173/",
+            "checks": [
+              "Section dots appear and are clickable",
+              "Clicking dots scrolls to correct section",
+              "Scroll progress bar updates during scroll",
+              "Active section highlighted correctly"
+            ]
+          },
+          "status": "completed",
+          "notes": "Verified: Navigation components (SectionDots, ScrollProgress) function correctly. SectionDots renders 2 dots for 'hero' and 'showcase' sections with proper IntersectionObserver tracking, clickable anchor links, and active section highlighting with orange accent. ScrollProgress bar updates during scroll with gradient styling, shimmer animation, and percentage indicator. All CSS animations defined (ping-slow, shimmer, pulse). TypeScript compiles without errors. Production build passes (409KB JS, 122KB gzipped). Dev server running on localhost:5173.",
+          "updated_at": "2025-12-26T21:19:15.741646+00:00"
+        }
+      ]
+    },
+    {
+      "id": "phase-2-performance",
+      "name": "Performance Optimization",
+      "type": "implementation",
+      "description": "Optimize bundle size, configure Vite for production, implement asset preloading, ensure 60fps animations.",
+      "depends_on": [
+        "phase-1-validation"
+      ],
+      "parallel_safe": false,
+      "subtasks": [
+        {
+          "id": "subtask-2-1",
+          "description": "Configure Vite for production optimization",
+          "service": "portfolio",
+          "files_to_modify": [
+            "vite.config.ts"
+          ],
+          "files_to_create": [],
+          "patterns_from": [
+            "vite.config.ts"
+          ],
+          "verification": {
+            "type": "command",
+            "command": "cd portfolio && npm run build",
+            "expected": "Build succeeds, dist/ directory created with optimized assets"
+          },
+          "status": "pending",
+          "notes": "Add Tailwind CSS plugin, configure asset handling for .riv files, enable minification"
+        },
+        {
+          "id": "subtask-2-2",
+          "description": "Implement asset preloading for critical resources",
+          "service": "portfolio",
+          "files_to_modify": [
+            "src/App.tsx",
+            "index.html"
+          ],
+          "files_to_create": [],
+          "patterns_from": [
+            "src/components/shared/RiveAnimation.tsx"
+          ],
+          "verification": {
+            "type": "browser",
+            "url": "http://localhost:5173/",
+            "checks": [
+              "Network tab shows .riv file preloaded",
+              "Fonts preloaded",
+              "No render-blocking resources"
+            ]
+          },
+          "status": "pending",
+          "notes": "Preload factory_hero_alt.riv, Geist fonts, critical CSS"
+        },
+        {
+          "id": "subtask-2-3",
+          "description": "Verify bundle size meets target (<500KB gzipped)",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "command",
+            "command": "cd portfolio && npm run build && ls -lh dist/assets/*.js | awk '{print $5, $9}'",
+            "expected": "Main JS bundle <500KB"
+          },
+          "status": "pending",
+          "notes": "Use vite-plugin-bundle-visualizer if needed to identify large dependencies"
+        },
+        {
+          "id": "subtask-2-4",
+          "description": "Test animation performance (60fps target)",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "manual",
+            "instructions": "Open Chrome DevTools \u2192 Performance tab, record while scrolling through all sections. Verify FPS stays above 55fps, no long tasks >50ms."
+          },
+          "status": "pending",
+          "notes": "Check scroll animations, Rive animation, particle effects. Optimize if <60fps."
+        }
+      ]
+    },
+    {
+      "id": "phase-3-responsive",
+      "name": "Mobile Responsiveness Verification",
+      "type": "implementation",
+      "description": "Test and fix responsive layouts across mobile (375px), tablet (768px), and desktop (1440px+) viewports.",
+      "depends_on": [
+        "phase-1-validation"
+      ],
+      "parallel_safe": true,
+      "subtasks": [
+        {
+          "id": "subtask-3-1",
+          "description": "Test mobile layout (375px viewport)",
+          "service": "portfolio",
+          "files_to_modify": [
+            "src/components/hero/HeroSection.tsx",
+            "src/components/shared/ScrollShowcase.tsx"
+          ],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "browser",
+            "url": "http://localhost:5173/",
+            "checks": [
+              "HeroSection stacks vertically on mobile",
+              "Rive animation scales correctly",
+              "ScrollShowcase grid collapses to single column",
+              "Touch targets \u226544px",
+              "No horizontal overflow",
+              "Text remains readable"
+            ]
+          },
+          "status": "pending",
+          "notes": "Test in Chrome DevTools mobile view (iPhone SE, iPhone 12 Pro, Galaxy S21)"
+        },
+        {
+          "id": "subtask-3-2",
+          "description": "Test tablet layout (768px-1024px)",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "browser",
+            "url": "http://localhost:5173/",
+            "checks": [
+              "ScrollShowcase uses 2-column grid where appropriate",
+              "Navigation remains accessible",
+              "Spacing scales appropriately",
+              "Typography scales correctly"
+            ]
+          },
+          "status": "pending",
+          "notes": "Test on iPad, iPad Pro viewports"
+        },
+        {
+          "id": "subtask-3-3",
+          "description": "Verify desktop layout (1440px+)",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "browser",
+            "url": "http://localhost:5173/",
+            "checks": [
+              "12-column grid layout active",
+              "Max-width constraint applied (1920px)",
+              "Content doesn't stretch too wide",
+              "Animations perform smoothly"
+            ]
+          },
+          "status": "pending",
+          "notes": "Test on 1440px, 1920px, 2560px viewports"
+        }
+      ]
+    },
+    {
+      "id": "phase-4-production-build",
+      "name": "Production Build Configuration",
+      "type": "implementation",
+      "description": "Configure production build settings, environment variables, and verify build output.",
+      "depends_on": [
+        "phase-2-performance",
+        "phase-3-responsive"
+      ],
+      "parallel_safe": false,
+      "subtasks": [
+        {
+          "id": "subtask-4-1",
+          "description": "Finalize Vite production configuration",
+          "service": "portfolio",
+          "files_to_modify": [
+            "vite.config.ts"
+          ],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "command",
+            "command": "cd portfolio && npm run build && npm run preview",
+            "expected": "Production build succeeds, preview server starts on port 4173"
+          },
+          "status": "pending",
+          "notes": "Ensure @tailwindcss/vite plugin configured, rolldownOptions set, base path correct"
+        },
+        {
+          "id": "subtask-4-2",
+          "description": "Verify production build quality",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "browser",
+            "url": "http://localhost:4173/",
+            "checks": [
+              "All components render correctly",
+              "No 404 errors for assets",
+              "Fonts load properly",
+              "Rive animation works",
+              "No console errors or warnings"
+            ]
+          },
+          "status": "pending",
+          "notes": "Test production preview build before deployment"
+        },
+        {
+          "id": "subtask-4-3",
+          "description": "Run Lighthouse performance audit",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "manual",
+            "instructions": "Open production preview (localhost:4173) in Chrome, run Lighthouse audit. Target: Performance \u226585, Accessibility \u226590, Best Practices \u226590, SEO \u226590"
+          },
+          "status": "pending",
+          "notes": "Document Lighthouse scores, address any critical issues"
+        }
+      ]
+    },
+    {
+      "id": "phase-5-deployment",
+      "name": "Deployment to Vercel/Netlify",
+      "type": "implementation",
+      "description": "Deploy production build to Vercel or Netlify, configure domain, verify live site.",
+      "depends_on": [
+        "phase-4-production-build"
+      ],
+      "parallel_safe": false,
+      "subtasks": [
+        {
+          "id": "subtask-5-1",
+          "description": "Create Vercel/Netlify project and deploy",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [
+            "vercel.json or netlify.toml"
+          ],
+          "patterns_from": [],
+          "verification": {
+            "type": "manual",
+            "instructions": "1. Connect GitHub repo to Vercel/Netlify, 2. Configure build settings (build command: npm run build, output: dist), 3. Deploy, 4. Verify deployment succeeds, 5. Get public URL"
+          },
+          "status": "pending",
+          "notes": "Choose Vercel for better Vite integration, or Netlify for simplicity"
+        },
+        {
+          "id": "subtask-5-2",
+          "description": "Verify deployed site functionality",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "browser",
+            "url": "[DEPLOYED_URL]",
+            "checks": [
+              "Site loads successfully",
+              "All components render",
+              "Rive animation works",
+              "Scroll animations trigger",
+              "Navigation functional",
+              "Mobile responsive",
+              "No console errors"
+            ]
+          },
+          "status": "pending",
+          "notes": "Test from multiple devices and browsers"
+        },
+        {
+          "id": "subtask-5-3",
+          "description": "Run production Lighthouse audit on live site",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "manual",
+            "instructions": "Run Lighthouse on deployed URL. Target: Performance \u226585, ensure no regressions from preview build"
+          },
+          "status": "pending",
+          "notes": "Document final Lighthouse scores for QA sign-off"
+        }
+      ]
+    },
+    {
+      "id": "phase-6-qa-polish",
+      "name": "Final QA & Polish",
+      "type": "integration",
+      "description": "Final verification, cross-browser testing, document any known issues, prepare for handoff.",
+      "depends_on": [
+        "phase-5-deployment"
+      ],
+      "parallel_safe": false,
+      "subtasks": [
+        {
+          "id": "subtask-6-1",
+          "description": "Cross-browser testing",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "manual",
+            "instructions": "Test deployed site on: Chrome (latest), Safari (latest), Firefox (latest), Edge (latest). Verify all features work across browsers."
+          },
+          "status": "pending",
+          "notes": "Document any browser-specific issues, fix critical ones"
+        },
+        {
+          "id": "subtask-6-2",
+          "description": "Final visual QA against Factory.ai design",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "manual",
+            "instructions": "Side-by-side comparison with Factory.ai site. Verify: orange accent colors match, animations feel similar, typography consistent, spacing/layout similar."
+          },
+          "status": "pending",
+          "notes": "Make final visual adjustments if needed"
+        },
+        {
+          "id": "subtask-6-3",
+          "description": "Security and accessibility audit",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "command",
+            "command": "cd portfolio && npm audit",
+            "expected": "No high/critical vulnerabilities"
+          },
+          "status": "pending",
+          "notes": "Run npm audit, check Lighthouse accessibility score"
+        },
+        {
+          "id": "subtask-6-4",
+          "description": "Final end-to-end user flow verification",
+          "service": "portfolio",
+          "files_to_modify": [],
+          "files_to_create": [],
+          "patterns_from": [],
+          "verification": {
+            "type": "e2e",
+            "steps": [
+              "Load homepage",
+              "Wait for Rive animation to load",
+              "Scroll through all sections (Projects, Experience, Skills, Background)",
+              "Click section dots navigation",
+              "Test all interactive links (GitHub, LinkedIn, Email)",
+              "Verify mobile view on real device"
+            ]
+          },
+          "status": "pending",
+          "notes": "Complete user journey as if visiting for job application"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_phases": 6,
+    "total_subtasks": 17,
+    "services_involved": [
+      "portfolio"
+    ],
+    "parallelism": {
+      "max_parallel_phases": 2,
+      "parallel_groups": [
+        {
+          "phases": [
+            "phase-2-performance",
+            "phase-3-responsive"
+          ],
+          "reason": "Both depend only on phase-1-validation, operate on different file sets (performance: vite.config.ts, assets; responsive: component layouts)"
+        }
+      ],
+      "recommended_workers": 1,
+      "speedup_estimate": "1.2x with parallel execution of phases 2 and 3"
+    },
+    "startup_command": "cd portfolio && npm install && npm run dev"
+  },
+  "verification_strategy": {
+    "risk_level": "medium",
+    "skip_validation": false,
+    "test_creation_phase": "post_implementation",
+    "test_types_required": [
+      "unit",
+      "integration"
+    ],
+    "security_scanning_required": false,
+    "staging_deployment_required": false,
+    "acceptance_criteria": [
+      "All components render without errors",
+      "Lighthouse Performance score \u226585",
+      "Bundle size <500KB gzipped",
+      "Mobile responsive on 375px-1920px viewports",
+      "Site deployed to production with public URL",
+      "No high/critical npm vulnerabilities"
+    ],
+    "verification_steps": [
+      {
+        "name": "Unit Tests",
+        "command": "cd portfolio && npm test",
+        "expected_outcome": "All tests pass (if tests exist)",
+        "type": "test",
+        "required": false,
+        "blocking": false
+      },
+      {
+        "name": "Build Verification",
+        "command": "cd portfolio && npm run build",
+        "expected_outcome": "Build succeeds, dist/ created",
+        "type": "build",
+        "required": true,
+        "blocking": true
+      },
+      {
+        "name": "Lighthouse Performance Audit",
+        "command": "manual - Chrome DevTools",
+        "expected_outcome": "Performance \u226585, Accessibility \u226590",
+        "type": "manual",
+        "required": true,
+        "blocking": true
+      },
+      {
+        "name": "Cross-Browser Testing",
+        "command": "manual - Chrome, Safari, Firefox, Edge",
+        "expected_outcome": "No critical browser-specific issues",
+        "type": "manual",
+        "required": true,
+        "blocking": true
+      }
+    ],
+    "reasoning": "Medium risk polish and deployment task requires thorough testing of existing components, performance validation, and cross-browser verification before production deployment"
+  },
+  "qa_acceptance": {
+    "unit_tests": {
+      "required": false,
+      "commands": [],
+      "minimum_coverage": null,
+      "notes": "No unit tests currently exist - focus on integration and manual testing"
+    },
+    "integration_tests": {
+      "required": false,
+      "commands": [],
+      "services_to_test": [],
+      "notes": "Manual integration testing via browser verification checks"
+    },
+    "e2e_tests": {
+      "required": true,
+      "commands": [],
+      "flows": [
+        "first-visit-experience",
+        "scroll-all-sections",
+        "navigation-interaction",
+        "mobile-experience"
+      ],
+      "notes": "Manual E2E testing - verify complete user journey"
+    },
+    "browser_verification": {
+      "required": true,
+      "pages": [
+        {
+          "url": "http://localhost:5173/",
+          "checks": [
+            "HeroSection renders with Rive animation",
+            "Particle effects visible and animating",
+            "No console errors"
+          ]
+        },
+        {
+          "url": "http://localhost:5173/#showcase",
+          "checks": [
+            "All 4 sections render",
+            "Scroll animations trigger",
+            "Data displays correctly"
+          ]
+        }
+      ]
+    },
+    "performance_verification": {
+      "required": true,
+      "checks": [
+        "Lighthouse Performance \u226585",
+        "Bundle size <500KB gzipped",
+        "FPS \u226555 during scroll animations",
+        "First Contentful Paint <2.5s"
+      ]
+    },
+    "deployment_verification": {
+      "required": true,
+      "checks": [
+        "Site accessible at public URL",
+        "All assets load correctly",
+        "No 404 errors",
+        "Works on mobile devices"
+      ]
+    }
+  },
+  "qa_signoff": null,
+  "last_updated": "2025-12-26T21:19:15.741657+00:00"
+}

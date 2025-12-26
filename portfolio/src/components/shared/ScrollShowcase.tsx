@@ -151,9 +151,9 @@ export function ScrollShowcase() {
                     GitHub →
                   </a>
                 )}
-                {project.links.demo && (
+                {project.links.live && (
                   <a
-                    href={project.links.demo}
+                    href={project.links.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base-400 hover:text-accent-200 transition-colors font-mono text-[11px] uppercase flex items-center gap-1"
@@ -431,7 +431,7 @@ export function ScrollShowcase() {
                   <span className="text-accent-200 font-mono text-[48px] font-bold">K</span>
                 </div>
                 <h3 className="text-foreground text-[24px] mb-2">{profile.name}</h3>
-                <p className="text-accent-200 font-mono text-[14px] uppercase mb-4">{profile.title}</p>
+                <p className="text-accent-200 font-mono text-[14px] uppercase mb-4">{profile.currentRole.title}</p>
                 <p className="text-base-500 font-mono text-[12px] leading-relaxed">
                   {profile.tagline}
                 </p>

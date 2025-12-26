@@ -935,7 +935,7 @@ html, body {
 }
 
 /* Active/pressed state for touch feedback */
-.active\\:scale-95:active {
+.touch-scale-active:active {
   transform: scale(0.95);
 }
 

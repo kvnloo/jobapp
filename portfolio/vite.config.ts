@@ -6,6 +6,9 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
 
+  // Base path for deployment (use '/' for root, or '/subpath/' for subpath deployments)
+  base: '/',
+
   // Path resolution
   resolve: {
     alias: {
@@ -24,49 +27,49 @@ export default defineConfig({
     // Output directory
     outDir: 'dist',
 
-    // Enable source maps for debugging (hidden in production)
+    // Disable source maps in production for smaller bundle and security
     sourcemap: false,
 
-    // Minification (Vite 7 uses Oxc minifier by default - 30-90x faster)
+    // Minification using esbuild (fast and efficient)
     minify: 'esbuild',
 
-    // CSS code splitting
+    // CSS code splitting for better caching
     cssCodeSplit: true,
+
+    // Inline assets smaller than 4KB as base64
+    assetsInlineLimit: 4096,
 
     // Asset size warning limit (500KB)
     chunkSizeWarningLimit: 500,
 
-    // Rolldown options for Vite 7
+    // Module preload for better loading performance
+    modulePreload: {
+      polyfill: true,
+    },
+
+    // Rollup options for chunk splitting and asset organization
     rollupOptions: {
       output: {
         // Manual chunk splitting for better caching
         manualChunks: {
-          // Vendor chunk for React
           'vendor-react': ['react', 'react-dom'],
-          // Rive animation library in separate chunk
           'vendor-rive': ['@rive-app/react-canvas'],
         },
         // Asset file naming with content hash for cache busting
         assetFileNames: (assetInfo) => {
-          const name = assetInfo.name || '';
-          // Keep .riv files in assets/rive directory
+          const name = assetInfo.name || ''
           if (name.endsWith('.riv')) {
-            return 'assets/rive/[name]-[hash][extname]';
+            return 'assets/rive/[name]-[hash][extname]'
           }
-          // Fonts in fonts directory
           if (/\.(woff|woff2|eot|ttf|otf)$/.test(name)) {
-            return 'assets/fonts/[name]-[hash][extname]';
+            return 'assets/fonts/[name]-[hash][extname]'
           }
-          // Images in images directory
           if (/\.(png|jpe?g|gif|svg|webp|ico)$/.test(name)) {
-            return 'assets/images/[name]-[hash][extname]';
+            return 'assets/images/[name]-[hash][extname]'
           }
-          // Default for other assets
-          return 'assets/[name]-[hash][extname]';
+          return 'assets/[name]-[hash][extname]'
         },
-        // Chunk file naming
         chunkFileNames: 'assets/js/[name]-[hash].js',
-        // Entry file naming
         entryFileNames: 'assets/js/[name]-[hash].js',
       },
     },
@@ -82,9 +85,17 @@ export default defineConfig({
   // Preview server (production build preview)
   preview: {
     port: 4173,
+    strictPort: false,
+    host: true,
+    headers: {
+      // Security headers for production preview
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'DENY',
+      'X-XSS-Protection': '1; mode=block',
+    },
   },
 
-  // Optimize dependencies
+  // Optimize dependencies for faster dev server startup
   optimizeDeps: {
     include: ['react', 'react-dom', '@rive-app/react-canvas'],
   },

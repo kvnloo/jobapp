@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ profile, className = '' }: HeroSectionProps) {
   return (
-    <section id="hero" className={`relative mx-auto grid h-auto w-full grid-cols-4 gap-x-4 md:grid-cols-8 md:gap-x-5 lg:grid-cols-12 lg:gap-x-6 my-12 sm:my-16 md:my-20 bg-transparent px-4 md:px-6 first:mt-4 md:mt-16 lg:mt-20 lg:px-9 first:lg:mt-10 lg:mb-[7.5rem] md:h-[calc(100dvh-140px)] lg:h-[calc(100dvh-160px)] md:max-h-[650px] lg:max-h-[725px] md:min-h-[500px] lg:min-h-[620px] xl:mb-[5.5rem] overflow-x-hidden ${className}`}>
+    <section id="hero" className={`relative mx-auto grid h-auto w-full grid-cols-4 gap-x-4 md:grid-cols-8 md:gap-x-5 lg:grid-cols-12 lg:gap-x-6 xl:gap-x-8 2xl:gap-x-10 my-12 sm:my-16 md:my-20 bg-transparent px-4 md:px-6 first:mt-4 md:mt-16 lg:mt-20 xl:mt-24 lg:px-9 xl:px-12 2xl:px-16 first:lg:mt-10 lg:mb-[7.5rem] xl:mb-[6rem] 2xl:mb-[6.5rem] md:h-[calc(100dvh-140px)] lg:h-[calc(100dvh-160px)] md:max-h-[650px] lg:max-h-[725px] xl:max-h-[800px] 2xl:max-h-[850px] md:min-h-[500px] lg:min-h-[620px] xl:min-h-[680px] overflow-x-hidden ${className}`}>
 
       {/* Floating Ambient Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -20,7 +20,7 @@ export function HeroSection({ profile, className = '' }: HeroSectionProps) {
         <div className="absolute bottom-40 left-[35%] w-1.5 h-1.5 bg-accent-200 rounded-full animate-float-3 opacity-20" />
       </div>
 
-      <div className="z-10 col-span-4 md:col-span-4 flex max-w-[650px] flex-col justify-between lg:col-span-6 md:max-w-none lg:max-w-none">
+      <div className="z-10 col-span-4 md:col-span-4 flex max-w-[650px] flex-col justify-between lg:col-span-6 md:max-w-none lg:max-w-[600px] xl:max-w-[680px] 2xl:max-w-[750px]">
         <div className="flex flex-col gap-y-4 lg:gap-y-6">
           {/* Vision Badge */}
           <div className="inline-flex items-center gap-3 pt-4 animate-fadeIn">
@@ -34,7 +34,7 @@ export function HeroSection({ profile, className = '' }: HeroSectionProps) {
           </div>
 
           {/* Description - directly under Vision */}
-          <p className="text-pretty font-mono text-[16px] leading-[140%] tracking-[-0.02rem] md:text-[17px] lg:text-[18px] md:tracking-[-0.02125rem] lg:tracking-[-0.0225rem] text-base-300 md:max-w-[400px] lg:max-w-[510px] animate-fadeIn" style={{ animationDelay: '0.2s' }}>
+          <p className="text-pretty font-mono text-[16px] leading-[140%] tracking-[-0.02rem] md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[20px] md:tracking-[-0.02125rem] lg:tracking-[-0.0225rem] text-base-300 md:max-w-[400px] lg:max-w-[510px] xl:max-w-[580px] 2xl:max-w-[640px] animate-fadeIn" style={{ animationDelay: '0.2s' }}>
             {profile.tagline}
           </p>
         </div>
@@ -82,7 +82,7 @@ export function HeroSection({ profile, className = '' }: HeroSectionProps) {
 
       {/* Right side - Rive Hero Animation - responsive sizing */}
       <div className="col-span-4 md:col-span-4 lg:col-span-6 relative flex items-center justify-center animate-phase-5-container mt-8 sm:mt-4 md:mt-0">
-        <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center max-w-full">
+        <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[560px] 2xl:h-[620px] flex items-center justify-center max-w-full">
           <RiveAnimation
             src="/assets/rive/factory_hero_alt.riv"
             className="w-full h-full object-contain"

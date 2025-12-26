@@ -943,3 +943,183 @@ html, body {
 * {
   -webkit-tap-highlight-color: rgba(238, 96, 24, 0.1);
 }
+
+/* ========================================
+   CROSS-BROWSER COMPATIBILITY FIXES
+   Ensure consistent experience across Chrome, Safari, Firefox, Edge
+   ======================================== */
+
+/* Backdrop filter with Safari webkit prefix */
+.backdrop-blur-sm {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/* Override Tailwind backdrop utilities to include webkit prefix */
+[class*="backdrop-blur"] {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur, blur(8px));
+  backdrop-filter: var(--tw-backdrop-blur, blur(8px));
+}
+
+/*
+ * Dynamic viewport height (dvh) fallback for older browsers
+ * dvh is supported in Chrome 108+, Safari 15.4+, Firefox 108+
+ * Fallback to vh for older browsers - components using dvh should also have vh backup
+ */
+@supports not (height: 100dvh) {
+  .h-dvh {
+    height: 100vh;
+  }
+  [style*="100dvh"] {
+    height: 100vh !important;
+  }
+}
+
+/*
+ * oklch color format fallback
+ * oklch is supported in Chrome 111+, Safari 15.4+, Firefox 113+
+ * Components use CSS variables which have hex fallbacks in :root
+ */
+
+/*
+ * text-wrap: balance/pretty fallback
+ * Supported in Chrome 114+, Safari 17.4+, Firefox 121+
+ * Falls back gracefully to normal text wrapping
+ */
+@supports not (text-wrap: balance) {
+  .text-balance {
+    text-wrap: normal;
+  }
+}
+
+@supports not (text-wrap: pretty) {
+  .text-pretty {
+    text-wrap: normal;
+  }
+}
+
+/*
+ * Smooth scroll behavior with reduced motion preference
+ * Supported in Chrome 61+, Safari 15.4+, Firefox 36+, Edge 79+
+ */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/*
+ * CSS Grid subgrid fallback (not used but good to have)
+ * Subgrid is supported in Chrome 117+, Safari 16+, Firefox 71+
+ */
+
+/*
+ * gap property fallback for older browsers
+ * gap is supported in Chrome 84+, Safari 14.1+, Firefox 63+, Edge 84+
+ * Flex gap specifically: Chrome 84+, Safari 14.1+
+ */
+@supports not (gap: 1rem) {
+  .flex > * + * {
+    margin-left: 1rem;
+  }
+}
+
+/*
+ * aspect-ratio fallback
+ * Supported in Chrome 88+, Safari 15+, Firefox 89+, Edge 88+
+ */
+@supports not (aspect-ratio: 16 / 9) {
+  .aspect-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+  }
+  .aspect-video > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*
+ * Scrollbar styling (Chrome/Edge only - Firefox has separate syntax)
+ */
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-base-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-base-700);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-base-600);
+}
+
+/* Firefox */
+@supports (scrollbar-color: auto) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-base-700) var(--dark-base-secondary);
+  }
+}
+
+/*
+ * Focus-visible polyfill support
+ * Supported in Chrome 86+, Safari 15.4+, Firefox 85+, Edge 86+
+ */
+@supports not selector(:focus-visible) {
+  *:focus {
+    outline: 2px solid var(--accent-100);
+    outline-offset: 2px;
+  }
+}
+
+/*
+ * Container queries fallback (if ever used)
+ * Supported in Chrome 105+, Safari 16+, Firefox 110+, Edge 105+
+ */
+
+/*
+ * Color scheme for form elements
+ */
+@media (prefers-color-scheme: dark) {
+  input, select, textarea {
+    color-scheme: dark;
+  }
+}
+
+/*
+ * Print styles for better PDF/print output
+ */
+@media print {
+  * {
+    background: white !important;
+    color: black !important;
+  }
+
+  .no-print,
+  nav,
+  .animate-pulse-glow,
+  [class*="animate-"] {
+    display: none !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+}

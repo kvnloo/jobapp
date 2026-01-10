@@ -1,0 +1,6 @@
+# Allow all crawlers to index this site
+User-agent: *
+Allow: /
+
+# Sitemap location (optional - uncomment if sitemap.xml is added)
+# Sitemap: https://kevinrajan.com/sitemap.xml

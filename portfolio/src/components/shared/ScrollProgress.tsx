@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 export function ScrollProgress() {
   const [progress, setProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
     // Delay visibility until hero animation starts settling
@@ -10,17 +11,31 @@ export function ScrollProgress() {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
+  // Optimized scroll handler using requestAnimationFrame for 60fps
+  const handleScroll = useCallback(() => {
+    // Cancel any pending animation frame to prevent buildup
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+    }
+
+    // Batch visual updates in next animation frame
+    rafRef.current = requestAnimationFrame(() => {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercent = (scrollTop / docHeight) * 100;
       setProgress(scrollPercent);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    });
   }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
+  }, [handleScroll]);
 
   return (
     <div

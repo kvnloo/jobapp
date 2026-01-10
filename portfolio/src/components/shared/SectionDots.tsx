@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 interface Section {
   id: string;
@@ -16,6 +16,7 @@ export function SectionDots() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const prevActiveRef = useRef('hero');
+  const rafRef = useRef<number | null>(null);
 
   // Delayed entrance after page load
   useEffect(() => {
@@ -23,9 +24,15 @@ export function SectionDots() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Track scroll progress within current section
-  useEffect(() => {
-    const handleScroll = () => {
+  // Optimized scroll handler using requestAnimationFrame for 60fps
+  const handleScroll = useCallback(() => {
+    // Cancel any pending animation frame
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+    }
+
+    // Batch visual updates in next animation frame
+    rafRef.current = requestAnimationFrame(() => {
       const currentIndex = sections.findIndex(s => s.id === activeSection);
       const currentEl = document.getElementById(activeSection);
       const nextSection = sections[currentIndex + 1];
@@ -40,11 +47,19 @@ export function SectionDots() {
           : Math.min(1, scrolled / (sectionHeight * 0.5));
         setScrollProgress(progress);
       }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    });
   }, [activeSection]);
+
+  // Track scroll progress within current section
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
+  }, [handleScroll]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -71,7 +86,7 @@ export function SectionDots() {
 
   return (
     <nav
-      className={`fixed right-8 top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col items-end transition-all duration-700 ${
+      className={`fixed right-4 md:right-6 lg:right-8 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col items-end transition-all duration-700 ${
         isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
       }`}
       aria-label="Section Navigation"
@@ -191,9 +206,9 @@ export function SectionDots() {
         })}
       </div>
 
-      {/* Current section indicator */}
+      {/* Current section indicator - hidden on tablet for cleaner layout */}
       <div
-        className="absolute -left-16 top-1/2 -translate-y-1/2 text-base-500 font-mono text-[10px] uppercase tracking-wider transition-all duration-300"
+        className="absolute -left-16 top-1/2 -translate-y-1/2 text-base-500 font-mono text-[10px] uppercase tracking-wider transition-all duration-300 hidden lg:block"
         style={{
           opacity: hoveredSection ? 0 : 0.5,
         }}

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { projects } from '../../data/projects';
 import { experience } from '../../data/experience';
 import { skills } from '../../data/skills';
@@ -23,11 +23,20 @@ export function ScrollShowcase() {
   const [selectedItemIndex, setSelectedItemIndex] = useState(0);
   const [isContentVisible, setIsContentVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const rafRef = useRef<number | null>(null);
+  const lastScrollRef = useRef<number>(0);
 
   const sectionHeight = 100; // vh per section
 
-  useEffect(() => {
-    const handleScroll = () => {
+  // Optimized scroll handler using requestAnimationFrame for 60fps
+  const handleScroll = useCallback(() => {
+    // Cancel any pending animation frame
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+    }
+
+    // Batch visual updates in next animation frame
+    rafRef.current = requestAnimationFrame(() => {
       if (!containerRef.current) return;
 
       const container = containerRef.current;
@@ -48,13 +57,22 @@ export function ScrollShowcase() {
         setActiveIndex(newIndex);
         setSelectedItemIndex(0);
       }
-    };
 
+      lastScrollRef.current = window.scrollY;
+    });
+  }, [activeIndex]);
+
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [activeIndex]);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
+  }, [handleScroll]);
 
   const scrollToSection = (index: number) => {
     if (containerRef.current) {
@@ -79,7 +97,7 @@ export function ScrollShowcase() {
   // Get items for current section
   const getCurrentItems = () => {
     switch (activeIndex) {
-      case 0: return projects.slice(0, 6);
+      case 0: return projects; // All 8 projects
       case 1: return experience;
       case 2: return skills;
       case 3: return [
@@ -151,9 +169,9 @@ export function ScrollShowcase() {
                     GitHub →
                   </a>
                 )}
-                {project.links.demo && (
+                {project.links.live && (
                   <a
-                    href={project.links.demo}
+                    href={project.links.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base-400 hover:text-accent-200 transition-colors font-mono text-[11px] uppercase flex items-center gap-1"
@@ -431,7 +449,7 @@ export function ScrollShowcase() {
                   <span className="text-accent-200 font-mono text-[48px] font-bold">K</span>
                 </div>
                 <h3 className="text-foreground text-[24px] mb-2">{profile.name}</h3>
-                <p className="text-accent-200 font-mono text-[14px] uppercase mb-4">{profile.title}</p>
+                <p className="text-accent-200 font-mono text-[14px] uppercase mb-4">{profile.currentRole.title}</p>
                 <p className="text-base-500 font-mono text-[12px] leading-relaxed">
                   {profile.tagline}
                 </p>
@@ -525,14 +543,14 @@ export function ScrollShowcase() {
     <section
       ref={containerRef}
       id="showcase"
-      className="relative bg-dark-base-primary bg-[url('/assets/bg-lines.png')]"
+      className="relative bg-dark-base-primary bg-[url('/assets/bg-lines.png')] overflow-x-hidden"
       style={{ height: `${showcaseItems.length * sectionHeight}vh` }}
     >
       {/* Sticky container - full viewport */}
-      <div className="sticky top-0 h-screen overflow-hidden">
+      <div className="sticky top-0 h-screen overflow-hidden overflow-x-hidden">
 
         {/* Section label - top left */}
-        <div className="absolute top-8 left-4 lg:left-9 z-20">
+        <div className="absolute top-8 xl:top-10 left-4 lg:left-9 xl:left-12 2xl:left-16 z-20">
           <div className="inline-flex items-center gap-3">
             <div
               className="size-2 rounded-full animate-pulse-glow"
@@ -550,10 +568,10 @@ export function ScrollShowcase() {
             isContentVisible ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
         >
-          <h2 className="text-foreground font-normal text-[32px] lg:text-[48px] leading-[100%] tracking-[-0.08rem] mb-4">
+          <h2 className="text-foreground font-normal text-[32px] md:text-[40px] lg:text-[48px] xl:text-[56px] 2xl:text-[64px] leading-[100%] tracking-[-0.08rem] mb-4">
             {sectionHeader.title}
           </h2>
-          <p className="text-base-500 font-mono text-[14px] lg:text-[16px]">
+          <p className="text-base-500 font-mono text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] 2xl:text-[18px]">
             {sectionHeader.subtitle}
           </p>
           <div className="mt-8 flex items-center justify-center gap-2 text-base-600">
@@ -571,11 +589,11 @@ export function ScrollShowcase() {
             isContentVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         >
-          {/* 12-column grid layout like Factory.ai */}
-          <div className="h-full grid grid-cols-4 gap-x-4 lg:grid-cols-12 lg:gap-x-6 px-4 lg:px-0">
+          {/* 12-column grid layout like Factory.ai - responsive for tablet and desktop */}
+          <div className="h-full grid grid-cols-4 gap-x-4 md:grid-cols-8 md:gap-x-5 lg:grid-cols-12 lg:gap-x-6 xl:gap-x-8 2xl:gap-x-10 px-4 md:px-6 lg:px-0">
 
-            {/* Left Panel - Badge, headline, description at top; section nav at bottom (5 cols on desktop) */}
-            <div className="col-span-full lg:col-span-5 border-base-700 relative flex h-full flex-col lg:border-r lg:pl-9 lg:pr-8 py-8">
+            {/* Left Panel - Badge, headline, description at top; section nav at bottom (responsive columns) */}
+            <div className="col-span-full md:col-span-3 lg:col-span-5 border-base-700 relative flex h-full flex-col md:border-r md:pr-4 lg:border-r lg:pl-9 xl:pl-12 2xl:pl-16 lg:pr-8 xl:pr-10 2xl:pr-12 py-8 xl:py-10 2xl:py-12">
 
               {/* Badge/Label - at top */}
               <div className="inline-flex items-center gap-3 mb-4">
@@ -589,31 +607,31 @@ export function ScrollShowcase() {
               </div>
 
               {/* Main Headline - at top, below badge */}
-              <h2 className="text-foreground font-normal text-[28px] lg:text-[36px] xl:text-[42px] leading-[110%] tracking-[-0.04rem] lg:max-w-[400px]">
+              <h2 className="text-foreground font-normal text-[28px] md:text-[32px] lg:text-[36px] xl:text-[42px] 2xl:text-[48px] leading-[110%] tracking-[-0.04rem] md:max-w-[320px] lg:max-w-[400px] xl:max-w-[480px] 2xl:max-w-[540px]">
                 {sectionHeader.title}
               </h2>
 
               {/* Description - below headline */}
-              <p className="text-base-400 font-mono text-[13px] lg:text-[14px] leading-[160%] mt-4 lg:mt-6 lg:max-w-[390px]">
+              <p className="text-base-400 font-mono text-[13px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[160%] mt-4 md:mt-5 lg:mt-6 xl:mt-7 md:max-w-[280px] lg:max-w-[390px] xl:max-w-[450px] 2xl:max-w-[500px]">
                 {sectionHeader.subtitle}
               </p>
 
               {/* Section Navigation - pushed to bottom with mt-auto */}
-              <div className="mt-auto pt-8">
-                {/* Progress pills */}
-                <div className="border-base-700 relative flex rounded-full border p-[3px] w-fit flex-row space-x-1 px-1 mb-3">
+              <div className="mt-auto pt-6 sm:pt-8">
+                {/* Progress pills - touch-friendly on mobile */}
+                <div className="border-base-700 relative flex rounded-full border p-[3px] w-fit flex-row space-x-1.5 sm:space-x-1 px-1.5 sm:px-1 mb-3">
                   {showcaseItems.map((_, index) => (
                     <button
                       key={index}
-                      className="flex items-center justify-center cursor-pointer"
+                      className="flex items-center justify-center cursor-pointer min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0 -m-3 sm:m-0 touch-manipulation"
                       aria-label={`Go to step ${index + 1}`}
                       onClick={() => scrollToSection(index)}
                     >
                       <div
                         className={`relative overflow-hidden rounded-full transition-all duration-300 ease-linear ${
                           index === activeIndex
-                            ? 'bg-base-700 h-2 w-8'
-                            : 'size-2 bg-base-700'
+                            ? 'bg-base-700 h-2.5 sm:h-2 w-10 sm:w-8'
+                            : 'size-2.5 sm:size-2 bg-base-700'
                         }`}
                       >
                         {index === activeIndex && (
@@ -627,8 +645,8 @@ export function ScrollShowcase() {
                   ))}
                 </div>
 
-                {/* Section labels */}
-                <ul className="flex flex-col gap-1.5">
+                {/* Section labels - touch-friendly on mobile */}
+                <ul className="flex flex-col gap-2 sm:gap-1.5">
                   {showcaseItems.map((item, index) => {
                     const isActive = index === activeIndex;
                     const isPassed = index < activeIndex;
@@ -639,10 +657,10 @@ export function ScrollShowcase() {
                       <li key={item.number} className="flex">
                         <button
                           aria-label={`Go to step ${index + 1}`}
-                          className="cursor-pointer text-left transition-opacity duration-200 hover:opacity-80"
+                          className="cursor-pointer text-left transition-opacity duration-200 hover:opacity-80 active:opacity-60 min-h-[44px] sm:min-h-0 flex items-center touch-manipulation"
                           onClick={() => scrollToSection(index)}
                         >
-                          <p className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase transition-colors duration-300">
+                          <p className="text-pretty font-mono text-[13px] sm:text-[12px] leading-[100%] tracking-[-0.015rem] uppercase transition-colors duration-300">
                             <span className={`transition-colors duration-300 ${numberColor}`}>{item.number}</span>
                             {' '}
                             <span className={`transition-colors duration-300 ${titleColor}`}>{item.title}</span>
@@ -655,8 +673,8 @@ export function ScrollShowcase() {
               </div>
             </div>
 
-            {/* Right Panel - 2-column grid with details + preview (7 cols on desktop) */}
-            <div className="col-span-full lg:col-span-7 lg:col-start-6 grid gap-6 md:grid-cols-2 lg:pr-9 py-8">
+            {/* Right Panel - 2-column grid with details + preview (responsive columns) */}
+            <div className="col-span-full md:col-span-5 md:col-start-4 lg:col-span-7 lg:col-start-6 grid gap-4 md:gap-5 lg:gap-6 xl:gap-8 2xl:gap-10 md:grid-cols-2 md:pl-4 lg:pl-0 lg:pr-9 xl:pr-12 2xl:pr-16 py-8 xl:py-10 2xl:py-12">
 
               {/* Left column of right panel - Item selector + Detail */}
               <div className="border-base-700 flex flex-col gap-6 border-t pt-6 md:border-t-0 md:pt-0">
@@ -666,9 +684,9 @@ export function ScrollShowcase() {
                   {showcaseItems[activeIndex].number} - {showcaseItems[activeIndex].title.toUpperCase()}
                 </p>
 
-                {/* Item tabs/selector */}
-                <div className="flex flex-wrap gap-1">
-                  {currentItems.slice(0, 6).map((item, index) => {
+                {/* Item tabs/selector - touch-friendly sizing */}
+                <div className="flex flex-wrap gap-1.5 sm:gap-1">
+                  {currentItems.slice(0, 8).map((item, index) => {
                     const itemTitle = 'title' in item ? (item as { title: string }).title :
                       'name' in item ? (item as { name: string }).name :
                       'company' in item ? (item as { company: string }).company : `Item ${index + 1}`;
@@ -676,10 +694,10 @@ export function ScrollShowcase() {
                       <button
                         key={index}
                         onClick={() => setSelectedItemIndex(index)}
-                        className={`px-3 py-1.5 text-pretty font-mono text-[10px] leading-[100%] tracking-[-0.0125rem] uppercase border rounded-sm transition-all ${
+                        className={`min-h-[44px] sm:min-h-[32px] px-3 py-2 sm:py-1.5 text-pretty font-mono text-[11px] sm:text-[10px] leading-[100%] tracking-[-0.0125rem] uppercase border rounded-sm transition-all touch-manipulation ${
                           selectedItemIndex === index
                             ? 'bg-accent-200/10 border-accent-200/50 text-accent-200'
-                            : 'border-base-700 text-base-500 hover:border-base-600 hover:text-base-400'
+                            : 'border-base-700 text-base-500 hover:border-base-600 hover:text-base-400 active:bg-base-900'
                         }`}
                       >
                         {itemTitle.length > 12 ? itemTitle.slice(0, 12) + '...' : itemTitle}
@@ -693,19 +711,19 @@ export function ScrollShowcase() {
                   {renderDetailView()}
                 </div>
 
-                {/* Action buttons */}
+                {/* Action buttons - touch-friendly sizing */}
                 <div className="flex gap-3 mt-auto pt-4">
-                  <button className="flex-1 py-2.5 px-4 bg-accent-200 text-dark-base-primary font-mono text-[11px] uppercase tracking-wide rounded-sm hover:bg-accent-100 transition-colors">
+                  <button className="flex-1 min-h-[44px] py-3 px-4 bg-accent-200 text-dark-base-primary font-mono text-[11px] uppercase tracking-wide rounded-sm hover:bg-accent-100 active:bg-accent-300 transition-colors touch-manipulation">
                     View Details
                   </button>
-                  <button className="py-2.5 px-4 border border-base-700 text-base-400 font-mono text-[11px] uppercase tracking-wide rounded-sm hover:border-base-600 hover:text-base-300 transition-colors">
+                  <button className="min-h-[44px] py-3 px-4 border border-base-700 text-base-400 font-mono text-[11px] uppercase tracking-wide rounded-sm hover:border-base-600 hover:text-base-300 active:bg-base-900 transition-colors touch-manipulation">
                     Learn More
                   </button>
                 </div>
               </div>
 
-              {/* Right column of right panel - Preview/Visual */}
-              <div className="border-base-700 flex flex-col gap-6 border-t pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-6">
+              {/* Right column of right panel - Preview/Visual - hidden on very small screens */}
+              <div className="hidden sm:flex border-base-700 flex-col gap-6 border-t pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-6">
 
                 {/* Preview label */}
                 <p className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase text-base-500">
@@ -713,7 +731,7 @@ export function ScrollShowcase() {
                 </p>
 
                 {/* Preview content */}
-                <div className="flex-1 border border-base-800 rounded-md bg-dark-base-secondary/50 overflow-hidden relative min-h-[300px]">
+                <div className="flex-1 border border-base-800 rounded-md bg-dark-base-secondary/50 overflow-hidden relative min-h-[200px] sm:min-h-[280px] md:min-h-[300px]">
                   {renderPreviewContent()}
                 </div>
               </div>

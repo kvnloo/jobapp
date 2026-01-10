@@ -26,25 +26,25 @@ export function Footer({ className = '' }: FooterProps) {
           <nav className="flex flex-col gap-3">
             <a
               href="#projects"
-              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
             >
               Projects
             </a>
             <a
               href="#experience"
-              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
             >
               Experience
             </a>
             <a
               href="#skills"
-              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
             >
               Skills
             </a>
             <a
               href="#about"
-              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
             >
               About
             </a>
@@ -61,7 +61,7 @@ export function Footer({ className = '' }: FooterProps) {
               href="https://github.com/kvnloo"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
             >
               GitHub
             </a>
@@ -69,13 +69,13 @@ export function Footer({ className = '' }: FooterProps) {
               href="https://linkedin.com/in/kevinsrajan"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
             >
               LinkedIn
             </a>
             <a
               href="mailto:kevin@zero.llc"
-              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+              className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
             >
               Email
             </a>

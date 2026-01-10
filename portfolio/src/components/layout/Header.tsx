@@ -19,7 +19,7 @@ export function Header({ className = '' }: HeaderProps) {
             <ul className="group/menu flex space-x-8">
               <li className="relative opacity-100 transition-opacity duration-250 group-hover/menu:opacity-60 hover:!opacity-100">
                 <a
-                  className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+                  className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
                   href="#projects"
                 >
                   Projects
@@ -27,7 +27,7 @@ export function Header({ className = '' }: HeaderProps) {
               </li>
               <li className="relative opacity-100 transition-opacity duration-250 group-hover/menu:opacity-60 hover:!opacity-100">
                 <a
-                  className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+                  className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
                   href="#experience"
                 >
                   Experience
@@ -35,7 +35,7 @@ export function Header({ className = '' }: HeaderProps) {
               </li>
               <li className="relative opacity-100 transition-opacity duration-250 group-hover/menu:opacity-60 hover:!opacity-100">
                 <a
-                  className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+                  className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
                   href="#skills"
                 >
                   Skills
@@ -43,7 +43,7 @@ export function Header({ className = '' }: HeaderProps) {
               </li>
               <li className="relative opacity-100 transition-opacity duration-250 group-hover/menu:opacity-60 hover:!opacity-100">
                 <a
-                  className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-orange-500 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
+                  className="text-pretty font-mono text-[12px] leading-[100%] tracking-[-0.015rem] uppercase relative flex w-fit items-center transition-colors duration-150 hover:text-accent-200 group after:absolute after:-bottom-px after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-150 after:ease-out hover:after:w-full text-base-400"
                   href="#about"
                 >
                   About
